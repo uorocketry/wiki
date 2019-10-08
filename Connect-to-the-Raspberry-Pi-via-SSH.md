@@ -1,4 +1,4 @@
-## RequirementS
+## Requirements
  - Laptop with Windows (for the hotspot)
  - Laptop with a Linux distro and a SD card reader
 
