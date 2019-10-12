@@ -14,6 +14,6 @@
 ssh pi@raspberrypi.local
 ```
 
-## Notes
+## Additional notes
  - Some times, the hotspot turns off after 5 min of inactivity.
  - See the old tutorial if you want to connect the Raspberry Pi to a new network
