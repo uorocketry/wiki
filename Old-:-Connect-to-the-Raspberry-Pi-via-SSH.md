@@ -1,3 +1,5 @@
+This is if you want to add a new wifi network on the Raspberry Pi
+
 ## Requirements
  - Laptop with Windows (for the hotspot)
  - Laptop with a Linux distro and a SD card reader
@@ -28,6 +30,4 @@ network={
 ssh pi@raspberrypi.local
 ```
 
-## Additional notes
-Later on, we will use a specific laptop for the hotspot. The settings will be already configured, so you won't have to modify the SD card.
 
