@@ -1,0 +1,19 @@
+## Requirements
+ - The Rocketry Laptop
+ - Your personnal laptop
+
+## Steps
+1. Turn on the Rocketry Laptop and make sure it is connected to the eduroam network
+2. Go on Settings -> Network -> Hotspot and turn on the hotspot. Do **not** change the name and the password
+3. Connect your laptop to the hotspot
+4. Turn on the Raspberry Pi and wait a little bit
+5. You can now ssh into the raspberry pi and have internet access
+
+#### for linux :
+```
+ssh pi@raspberrypi.local
+```
+
+## Notes
+ - Some times, the hotspot turns off after 5 min of inactivity.
+ - See the old tutorial if you want to connect the Raspberry Pi to a new network
