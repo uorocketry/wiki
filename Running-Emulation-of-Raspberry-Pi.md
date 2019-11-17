@@ -9,7 +9,7 @@ Once you have everything, make a bash file called `config` and write into the fo
  
 `qemu-system-arm -kernel ./qemu-rpi-kernel/kernel-qemu-4.4.34-jessie -cpu arm1176 -m 256 -M versatilepb -no-reboot``-serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw init=/bin/bash" -hda /dev/mmcblk0`
 
-You can change the last part -hda /dev/mmcblk0 to any location you want. Please know the location of your SD Card!
+You can change the last part -hda /dev/mmcblk0 to any location you want. Please know the location of your SD Card! Also for -kernel: Change the path to the location of the kernel image!
 
 When you want to run the emulation: type `sudo ./config`
 
