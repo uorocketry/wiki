@@ -1,3 +1,7 @@
+Run `./build-and-run.sh` to build and run automatically.
+
+# Manually
+
 Here's how to compile the SBG example code on your laptop with the SBG connected via USB.
 
 1. go to: `cd <path_where_SBG_folder_is>/SBG/Software\ Development/sbgECom/projects/unix`
