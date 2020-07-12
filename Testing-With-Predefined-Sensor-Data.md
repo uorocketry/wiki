@@ -14,4 +14,4 @@ Testing data is a csv formatted in the same way as the following example file:
 
 This file should be placed in **TBD**.
 
-You can also [set this up with Vscode](wiki/Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin)
+You can also [set this up with Vscode](Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin)
