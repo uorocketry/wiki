@@ -1,5 +1,9 @@
 Run `./build-and-run.sh` to build and run automatically.
 
+`./build.sh` to just build.
+
+`./run.sh` to just run.
+
 # Manually
 
 Here's how to compile the SBG example code on your laptop with the SBG connected via USB.
