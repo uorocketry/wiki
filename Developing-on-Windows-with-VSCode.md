@@ -1,4 +1,4 @@
-If you want linting and error detection, you can use VSCode remote debugging. To compile in the command line, see [here](Compiling-the-SBG-Library-on-Linux-Unix-WSL).
+If you want linting and error detection, you can use VSCode remote debugging. To compile in the command line, see [here](Compiling-the-SBG-Library-on-Linux%5CUnix%5CWSL).
 
 VSCode supports remote debugging with WSL. First, install WSL.
 
