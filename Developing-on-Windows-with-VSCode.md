@@ -7,7 +7,7 @@ VSCode supports remote debugging with WSL. First, install WSL.
 
 ![Remote Debugging with WSL Button](https://user-images.githubusercontent.com/12688112/93003773-74bbca00-f50f-11ea-8cb8-75671f5e6c25.png)
 
-**Note**: This can actually be done with a real linux machine, such as a Raspberry Pi over SSH
+**Note**: This can also be done with a real linux machine, such as a Raspberry Pi over SSH
 
 3. Install CMake Tools Extension
 
