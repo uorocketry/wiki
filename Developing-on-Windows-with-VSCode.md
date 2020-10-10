@@ -14,3 +14,5 @@ VSCode supports remote debugging with WSL. First, install WSL.
 To setup CMake kits for different environement configurations, see [this document](Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin).
 
 **Note**: Remote WSL is like a new VSCode environment. You will have to reinstall most extensions.
+
+If git is not working, check out [this comment](https://github.com/microsoft/WSL/issues/184#issuecomment-287853688).
