@@ -6,15 +6,15 @@ Run `./build-and-run.sh` to build and run automatically.
 
 # Manually
 
-Here's how to compile the SBG example code on your laptop with the SBG connected via USB.
+Here's how to compile the code on your laptop:
 
-1. go to: `cd <path_where_SBG_folder_is>/SBG/Software\ Development/sbgECom/projects/unix`
+1. go to: `cd sbgECom/projects/unix`
 2. run `cmake -G 'Unix Makefiles'` to generate makefiles for the example `.c` file
 3. run `make` to actually compile 
-4. go to: `cd <path_where_SBG_folder_is>/SBG/Software\ Development/sbgECom/bin`
-5. run the example with: `./ellipseMinimal`
+4. go to: `cd sbgECom/bin`
+5. run the it with: `./MainLoop`
 
-The actual source code is in: `cd <path_where_SBG_folder_is>/SBG/Software\ Development/sbgECom/examples/ellipseMinimal/src`
+The actual source code is in: `sbgECom/src`
 
 The firmware guide should be in `<path_where_SBG_folder_is>/SBG/Documentation/Common`
 
