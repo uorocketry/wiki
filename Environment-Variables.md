@@ -1,3 +1,5 @@
+`HOTFIRE_TEST`: Run HotFire test.
+
 `NO_LOGS`: Disable logging to a file. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Disable-Logging-To-A-File)
 
 `SKIP_INIT`: Don't wait for sensors to initialize before switching to the first state.
