@@ -1,12 +1,25 @@
+#### Projects
+Default is October Sky
+
 `HOTFIRE_TEST`: Run HotFire test.
+
+
+#### For Development
 
 `SKIP_INIT`: Don't wait for sensors to initialize before switching to the first state.
 
-`NO_LOGS`: Disable logging to a file. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Disable-Logging-To-A-File)
-
-`NO_SOCKET_CONTROL`: Disable TCP server that can control the states remotely
-
 `TESTING`: Enable sensor testing and load sensor data from a testing file instead of real sensors. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Testing-With-Predefined-Sensor-Data)
+
+`USE_LOGGER`: Enable logging to a file. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Disable-Logging-To-A-File)
+
+#### Sensors
+
+`USE_SBG`: Enable SBG Sensor
+
+`USE_SOCKET_CLIENT`: Enable TCP server that can control the states remotely
+
+`USE_INPUT`: Enable stdin listener that can control the states
+
 
 # Setup
 
