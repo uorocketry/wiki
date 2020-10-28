@@ -1,0 +1,1 @@
+- To get serial working, the Pi has to have Bluetooth enabled. [See here](https://raspberrypi.stackexchange.com/questions/43788/pi-3-boot-with-uart-console)
