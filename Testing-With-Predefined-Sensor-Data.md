@@ -10,6 +10,6 @@ You can also [set this up with Vscode](Set-Environement-Variable-In-Vscode-With-
 
 ### Testing Data
 
-Testing data is a csv formatted in the same way as the log file (located at `sbgECom/bin/data/log.csv` or `./data/log.csv` if running the built code somewhere else).
+Testing data is a csv formatted in the same way as the log files (located at `LOG_PATH`, default `/data/`). Unlike the log files, it should have all data in one file.
 
-This file should be placed in `sbgECom/bin/data/test-data.csv` or `./data/test-data.csv` if running the built code somewhere else.
+This file should be placed in the location specified by `TESTING_INPUT_FILE` (default `./data/test-data.csv`).
