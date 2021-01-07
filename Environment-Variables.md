@@ -12,6 +12,12 @@ Default is October Sky
 
 `USE_LOGGER`: Enable logging to a file. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Disable-Logging-To-A-File)
 
+### File Paths
+
+`LOG_PATH`: Path where log files should be saved. Default: `"/data/"`
+
+`TESTING_INPUT_FILE`: File that contains sensor data for testing, only used if `TESTING` is enabled. Default: `"./data/test-data.csv"`
+
 #### Sensors
 
 `USE_SBG`: Enable SBG Sensor
