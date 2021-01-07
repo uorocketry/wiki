@@ -12,7 +12,7 @@ Default is October Sky
 
 `USE_LOGGER`: Enable logging to a file. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Disable-Logging-To-A-File)
 
-### File Paths
+##### File Paths
 
 `LOG_PATH`: Path where log files should be saved. Default: `"/data/"`
 
