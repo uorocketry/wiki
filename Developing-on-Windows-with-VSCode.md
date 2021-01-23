@@ -3,7 +3,7 @@ If you want linting and error detection, you can use VSCode remote debugging. To
 VSCode supports remote debugging with WSL. First, install WSL.
 
 1. Install the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
-2. Click the bottom left and select "Remote Debugging with WSL". 
+2. Click the bottom left and select "Reopen folder in WSL". 
 
 ![Remote Debugging with WSL Button](https://user-images.githubusercontent.com/12688112/93003773-74bbca00-f50f-11ea-8cb8-75671f5e6c25.png)
 
