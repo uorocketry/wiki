@@ -12,3 +12,4 @@ Raspberry Pi Setup:
 - [Add a new wifi network on the Raspberry Pi](Add-a-new-wifi-network-on-the-Raspberry-Pi)
 - [Connect to Raspberry Pi via SSH](Connect-to-Raspberry-Pi-via-SSH)
 - [Important Notes About Setting Up Raspberry Pi](Important-Notes-About-Setting-Up-Raspberry-Pi)
+- [Running Emulation of Raspberry Pi](Running-Emulation-of-Raspberry-Pi)
