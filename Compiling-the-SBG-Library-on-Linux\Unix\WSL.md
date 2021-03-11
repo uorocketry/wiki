@@ -4,6 +4,12 @@ Run `./build-and-run.sh` to build and run automatically.
 
 `./run.sh` to just run.
 
+You might need to install the necessary build tools. Here is the command for a few distros:
+
+**Debian/Ubuntu**: `sudo apt update && sudo apt install ninja-build cmake gcc make`
+
+**OpenSUSE**: `sudo zypper in ninja cmake gcc make`
+
 # Manually
 
 Here's how to compile the code on your laptop:
