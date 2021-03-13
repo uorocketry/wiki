@@ -31,7 +31,7 @@ Then, change your active kit and rebuild.
       "toolset": "host=x64"
     },
     "environmentVariables": {
-        "NO_LOGS": "1"
+        "USE_LOGGER": "0"
     }
 },
 {
@@ -45,7 +45,7 @@ Then, change your active kit and rebuild.
     },
     "environmentVariables": {
         "TESTING": "1",
-        "NO_LOGS": "1"
+        "USE_LOGGER": "0"
     }
 },
 {
