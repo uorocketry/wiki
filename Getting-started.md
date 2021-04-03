@@ -7,7 +7,7 @@ Linux:
 * Setup the environment variables with this wiki page https://github.com/uorocketry/rocket-code-2020/wiki/Environment-Variables
 * Install the necessary build tools using `sudo apt update && sudo apt install ninja-build cmake gcc make`. This command is for Debian/Ubuntu-based systems. It will vary between distros.
 * Compile the project with - `./build.sh`
-* Modify config.h file in the directory projects/HotFire folder to the following values: USE_RADIO, USE_GPIO, and USE_WIRING_PI to 0 and then type the command HOTFIRE_TEST=1 ./build.sh
+    * To run the Hotfire test code without a pi - `USE_RADIO=0; USE_GPIO=0; USE_WIRING_PI=0; HOTFIRE_TEST=1; ./build.sh`
 * You can now run the project locally with - `./run.sh`
 
 
