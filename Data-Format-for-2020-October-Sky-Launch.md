@@ -24,3 +24,48 @@
 ***
 
 # Data format for the Raspberry Pi
+* timeStamp
+* currentState.sbg.roll
+* currentState.sbg.pitch
+* currentState.sbg.yaw
+* currentState.sbg.rollAccuracy
+* currentState.sbg.pitchAccuracy
+* currentState.sbg.yawAccuracy
+* currentState.sbg.gpsLatitude
+* currentState.sbg.gpsLongitude
+* currentState.sbg.gpsAltitude
+* currentState.sbg.barometricAltitude
+* currentState.sbg.relativeBarometricAltitude
+* currentState.sbg.velocityN
+* currentState.sbg.velocityE
+* currentState.sbg.velocityD
+* currentState.sbg.filteredXaccelerometer
+* currentState.sbg.filteredYaccelerometer
+* currentState.sbg.filteredZaccelerometer
+* currentState.sbg.solutionStatus
+* currentState.currentStateNo
+* currentState.sbg.gpsPosStatus
+* currentState.sbg.gpsPosAccuracyLatitude
+* currentState.sbg.gpsPosAccuracyLongitude
+* currentState.sbg.gpsPosAccuracyAltitude
+* currentState.sbg.NumSvUsed (we logged this as a raw byte in the file. It needs to be post processed to convert it into ascii)
+* currentState.sbg.velocityNAccuracy
+* currentState.sbg.velocityEAccuracy
+* currentState.sbg.velocityDAccuracy
+* currentState.sbg.latitudeAccuracy
+* currentState.sbg.longitudeAccuracy
+* currentState.sbg.altitudeAccuracy
+* currentState.sbg.pressureStatus
+* currentState.sbg.barometricPressure
+* currentState.sbg.imuStatus
+* currentState.sbg.gyroX
+* currentState.sbg.gyroY
+* currentState.sbg.gyroZ
+* currentState.sbg.temp
+* currentState.sbg.deltaVelX
+* currentState.sbg.deltaVelY
+* currentState.sbg.deltaVelZ
+* currentState.sbg.deltaAngleX
+* currentState.sbg.deltaAngleY
+* currentState.sbg.deltaAngleZ
+\n
