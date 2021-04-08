@@ -16,4 +16,4 @@
 - [Running Emulation of Raspberry Pi](Running-Emulation-of-Raspberry-Pi)
 
 **Logging Format**:
-- [Logging Format for 2020 October Sky Launch](Data Format for 2020 October Sky Launch)
+- [Logging Format for 2020 October Sky Launch](Data-Format-for-2020-October-Sky-Launch)
