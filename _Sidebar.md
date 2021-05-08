@@ -4,6 +4,7 @@
 - [Developing on Windows with VSCode](https://github.com/uorocketry/rocket-code-2020/wiki/Developing-on-Windows-with-VSCode)
 - [Set Environment Variable In Vscode With The Cmake Plugin](Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin)
 - [Creating Unit Tests](Creating-Unit-Tests)
+- [Cross compiling for the Raspberry Pi](Cross-compiling-for-the-Raspberry-Pi)
 
 **Configuration**:
 - [Disable Logging To A File](Disable-Logging-To-A-File)
