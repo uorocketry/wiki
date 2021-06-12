@@ -13,3 +13,6 @@ Linux:
 
 To update the github submodules
 * `git submodule update --init --recursive`
+
+Once you are setup:
+- Check the stuff in the Next Up column in the GitHub project: https://github.com/uorocketry/rocket-code-2020/projects/1
