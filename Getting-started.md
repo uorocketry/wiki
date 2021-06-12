@@ -15,4 +15,4 @@ To update the github submodules
 * `git submodule update --init --recursive`
 
 Once you are setup:
-- Check the stuff in the Next Up column in the GitHub project: https://github.com/uorocketry/rocket-code-2020/projects/1
+- Check the stuff in the [Next Up column](https://github.com/uorocketry/rocket-code-2020/projects/1#column-14620035) in the GitHub project
