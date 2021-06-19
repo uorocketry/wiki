@@ -19,3 +19,4 @@
 
 **Logging Format**:
 - [Logging Format for 2020 October Sky Launch](Data-Format-for-2020-October-Sky-Launch)
+- [Setup RSSI debugging on the radios with Python](Radio-commands-in-Python-3)
