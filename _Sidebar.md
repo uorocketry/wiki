@@ -6,6 +6,7 @@
 - [Creating Unit Tests](Creating-Unit-Tests)
 - [Cross compiling for the Raspberry Pi](Cross-compiling-for-the-Raspberry-Pi)
 - [Info and Error Logging in the Rocket Code](Info-and-Error-Logging-in-the-Rocket-Code)
+- [Send Folder via SSH](Send-Folder-via-SSH)
 
 **Configuration**:
 - [Disable Logging To A File](Disable-Logging-To-A-File)
@@ -16,7 +17,6 @@
 - [Connect to Raspberry Pi via SSH](Connect-to-Raspberry-Pi-via-SSH)
 - [Important Notes About Setting Up Raspberry Pi](Important-Notes-About-Setting-Up-Raspberry-Pi)
 - [Running Emulation of Raspberry Pi](Running-Emulation-of-Raspberry-Pi)
-- [Send Folder via SSH](Send-Folder-via-SSH)
 
 **Logging Format**:
 - [Logging Format for 2020 October Sky Launch](Data-Format-for-2020-October-Sky-Launch)
