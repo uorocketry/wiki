@@ -16,7 +16,7 @@
 - [Connect to Raspberry Pi via SSH](Connect-to-Raspberry-Pi-via-SSH)
 - [Important Notes About Setting Up Raspberry Pi](Important-Notes-About-Setting-Up-Raspberry-Pi)
 - [Running Emulation of Raspberry Pi](Running-Emulation-of-Raspberry-Pi)
-- [Send folder via ssh]()
+- [Send Folder via SSH](Send-Folder-via-SSH)
 
 **Logging Format**:
 - [Logging Format for 2020 October Sky Launch](Data-Format-for-2020-October-Sky-Launch)
