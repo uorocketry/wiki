@@ -31,12 +31,22 @@ export RPI_TOOLS=/path/to/raspberry/pi/tools
 ./feat-cross-compilation/build-boost-arm.sh
 ```
 
+### Cross compiling libi2c
+To cross compile you will need to set two environment variables:
+
+- `RPI_TOOLS` which points to the path of the raspberry pi tools repository you cloned above
+
+Run `build-libi2c.sh`
+
+The libi2c library should be install in the `i2c-tools-4.3/` folder
+
 ### Cross compiling 
 
 To cross compile you will need to set two environment variables:
 
 - `RPI_TOOLS` which points to the path of the raspberry pi tools repository you cloned above
 - `BOOST_DIRECTORY` which points to the cross compiled boost directory you created above
+- `LIBI2C_DIRECTORY` which points to the cross compiled libi2c directory you created above
 
 Finally, run the `/build-arm.sh` script:
 
@@ -44,6 +54,8 @@ Finally, run the `/build-arm.sh` script:
 # set the required environment variables
 export RPI_TOOLS=/path/to/raspberry/pi/tools
 export BOOST_DIRECTORY=/path/to/boost_1_70_0
+export LIBI2C_DIRECTORY=/path/to/libi2c
+
 
 # build the project
 ./build-arm.sh
@@ -56,4 +68,6 @@ If you don't want to set the environment variables above every time you can appe
 ```bash
 export RPI_TOOLS=/path/to/raspberry/pi/tools
 export BOOST_DIRECTORY=/path/to/boost_1_70_0
+export LIBI2C_DIRECTORY=/path/to/libi2c
+
 ```
