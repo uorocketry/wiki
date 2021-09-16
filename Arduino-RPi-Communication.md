@@ -14,8 +14,15 @@
 			* [Ping](#ping)
 			* [Servo](#servo)
 			* [Digital](#digital)
+			* [Reset](#reset)
 		* [ArduinoOut](#arduinoout)
 			* [Acknowledgement](#acknowledgement)
+			* [Error](#error)
+			* [ArduinoInfo](#arduinoinfo)
+			* [ResetEvent](#resetevent)
+	* [Example Communication](#example-communication)
+		* [Servo and Pin Control](#servo-and-pin-control)
+		* [Unexpected Arduino Reset](#unexpected-arduino-reset)
 
 <!-- vim-markdown-toc -->
 
@@ -52,7 +59,7 @@ Or, another way to look at it:
 
 ## Protobuf Messages
 
-Please look at the repo (**add repo link here once it is created**) for the latest Protobuf definitions. This section will simply go over the major aspects of the messages.
+Please look at the repo for the latest Protobuf definitions. This section will simply go over the major aspects of the messages.
 
 ### ArduinoIn
 
@@ -73,6 +80,8 @@ The RPi needs to first send a `ServoInit` message to the Arduino. This will init
 #### Digital
 The RPi needs to first send a `DigitalInit` message to the Arduino. This will initialize the digital pin and also contains the safe value to fallback to. `DigitalControl` messages are used to control the initialized digital pins.
 
+#### Reset
+The RPi is able to reset the Arduino by sending a `Reset` message. This message is sent anytime the rocket-code starts, and allows to make sure the Arduino is in a clear state before proceeding. Once the reset is done, the Arduino will send a `ResetEvent` message to indicate it is now ready to be initialized.
 
 ### ArduinoOut
 
@@ -81,3 +90,36 @@ The `ArduinoOut` message encapsulates any messages sent from the Arduino to the 
 
 #### Acknowledgement
 The `ACK` message is sent for every message the Arduino receives. It only data it contains is the `messageId` of the received message. 
+
+#### Error
+The `Error` message is sent anytime the Arduino encounters a unexpected situation. It consists of the error message, along with the error level (WARNING, FATAL).
+
+#### ArduinoInfo
+The `ArduinoInfo` message is sent every 5 seconds to the RPi. The message contains only the `sessionId` field. This id should be randomly generated every time the Arduino starts (i.e. generated in the `setup()`).
+
+The intended use of this message is to allow the RPi to detect if the Arduino did an unexpected reset. If so, the RPi will be able to reinitialize the appropriate pins on the Arduino.
+
+#### ResetEvent
+The `ResetEvent` message is sent right at the end of the `setup()` function of the Arduino. It contains the current `sessionId`. This allows the RPi to know that the Arduino is in a fresh state and able to be initialized.
+
+## Example Communication
+
+### Servo and Pin Control
+Here is an example of the intended communication flow between the RPi and the Arduino to setup a servo and digital pin:
+  1. rocket-code is started.
+  2. A `Reset` message is sent to the Arduino.
+  3. Once the reset is done, the Arduino sends a `ResetEvent` to the RPi.
+  4. When the RPi receives the `ResetEvent`, it will send a `ServoInit` message and a `DigitalInit` message.
+  5. Anytime the RPi needs to control the servo, send a `ServoControl` message.
+  6. Anytime the RPi needs to control the pin, send a `DigitalControl` message.
+
+### Unexpected Arduino Reset
+Here is now an example of an unexpected Arduino reset:
+  1. All the steps of [Servo and Pin Control](#Servo_and_Pin_Control) are followed.
+  1. The RPi saved the `sessionId` when it received the `ResetEvent` in step 1.
+  2. For some reason, the Arduino (but not the RPi) resets.
+  3. Again, for some reason, the RPi doesn't receive the `ResetEvent` message.
+  4. When the Arduino sends the next `ArduinoInfo` message, the RPi detects that the `sessionId` doesn't match.
+  5. RPi send a `Reset` message.
+  6. When the RPi receives the `ResetEvent`, it stores the new `sessionId`.
+  7. The `ServoInit` and `DigitalInit` messages are sent again.
