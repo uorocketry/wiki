@@ -6,16 +6,16 @@
 <!-- vim-markdown-toc GFM -->
 
 * [Overview](#overview)
-        * [Goals](#goals)
+	* [Goals](#goals)
 * [Communication](#communication)
-        * [Communication Stack](#communication-stack)
-        * [Protobuf Messages](#protobuf-messages)
-                * [ArduinoIn](#arduinoin)
-                        * [Ping](#ping)
-                        * [Servo](#servo)
-                        * [Digital](#digital)
-                * [ArduinoOut](#arduinoout)
-                        * [Acknowledgement](#acknowledgement)
+	* [Communication Stack](#communication-stack)
+	* [Protobuf Messages](#protobuf-messages)
+		* [ArduinoIn](#arduinoin)
+			* [Ping](#ping)
+			* [Servo](#servo)
+			* [Digital](#digital)
+		* [ArduinoOut](#arduinoout)
+			* [Acknowledgement](#acknowledgement)
 
 <!-- vim-markdown-toc -->
 
