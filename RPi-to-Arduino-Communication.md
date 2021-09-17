@@ -15,6 +15,7 @@
 			* [Servo](#servo)
 			* [Digital](#digital)
 			* [Reset](#reset)
+			* [PingFailsafeReset](#pingfailsafereset)
 		* [ArduinoOut](#arduinoout)
 			* [Acknowledgement](#acknowledgement)
 			* [Error](#error)
@@ -70,9 +71,9 @@ The `ArduinoIn` message encapsulates any messages sent from the RPi to the Ardui
 The Arduino will sent an acknowledgement message for every message it receives. While this may not be strictly needed for all messages (say a ping), it simplifies the whole protocol.
 
 #### Ping
-The RPi sends a ping message every second to the Arduino. If the Arduino doesn't receive a ping for 10 seconds, it will fall back to a safe configuration.
+The RPi sends a ping message every second to the Arduino. 
 
-> Should the Arduino switch back to the previous configuration if the RPi starts sending again pings?
+If the Arduino doesn't receive a ping for 10 seconds, it will fall back to a safe configuration. When that happens, the `pingFailsafeTriggered` flag will be set in the `ArduinoInfo` message.
 
 #### Servo
 The RPi needs to first send a `ServoInit` message to the Arduino. This will initialize the servos and also contains the safe value to fallback to. `ServoControl` messages are used to control the initialized servo.
@@ -82,6 +83,10 @@ The RPi needs to first send a `DigitalInit` message to the Arduino. This will in
 
 #### Reset
 The RPi is able to reset the Arduino by sending a `Reset` message. This message is sent anytime the rocket-code starts, and allows to make sure the Arduino is in a clear state before proceeding. Once the reset is done, the Arduino will send a `ResetEvent` message to indicate it is now ready to be initialized.
+
+
+#### PingFailsafeReset
+A `PingFailsafeReset` can be set to reset the `pingFailsafeTriggered` flag in case it ever gets triggered.
 
 ### ArduinoOut
 
@@ -95,7 +100,9 @@ The `ACK` message is sent for every message the Arduino receives. It only data i
 The `Error` message is sent anytime the Arduino encounters a unexpected situation. It consists of the error message, along with the error level (WARNING, FATAL).
 
 #### ArduinoInfo
-The `ArduinoInfo` message is sent every 5 seconds to the RPi. The message contains only the `sessionId` field. This id should be randomly generated every time the Arduino starts (i.e. generated in the `setup()`).
+The `ArduinoInfo` message is sent every 5 seconds to the RPi. The message contains:
+  - `sessionId`: This id should be randomly generated every time the Arduino starts (i.e. generated in the `setup()`).
+  - `pingFailsafeTriggered`: Set if the ping failsafe has been triggered. Can be reset by sending a `PingFailsafeReset` command.
 
 The intended use of this message is to allow the RPi to detect if the Arduino did an unexpected reset. If so, the RPi will be able to reinitialize the appropriate pins on the Arduino.
 
