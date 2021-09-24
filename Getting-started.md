@@ -5,8 +5,8 @@
 * cd into the desired workspace
 * `git clone https://github.com/uorocketry/rocket-code-2020.git --recurse-submodules`
 * `cd rocket-code-2020`
-* Install the necessary libraries and build tools: `ninja-build`, `cmake`, `gcc`, `make`, `boost with filesystem`
-  * Command for Debian/Ubuntu: `sudo apt update && sudo apt install ninja-build cmake gcc g++ make libboost-all-dev protobuf-compiler`
+* Install the necessary libraries and build tools: `ninja-build`, `cmake`, `gcc`, `make`, `boost`, `protobuf`, `libi2c`
+  * Command for Debian/Ubuntu: `sudo apt update && sudo apt install ninja-build cmake gcc g++ make libboost-all-dev protobuf-compiler libi2c-dev`
 * Compile the project with - `./build.sh`
     * To run the Hotfire test code without a pi - `USE_RADIO=0 USE_GPIO=0 USE_WIRING_PI=0 HOTFIRE_TEST=1 ./build.sh`
 * You can now run the project locally with - `./run.sh`
