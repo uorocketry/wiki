@@ -3,6 +3,7 @@
 * Download VSCode https://code.visualstudio.com/Download
 * Open the terminal (if on Windows, use a WSL terminal)
 * cd into the desired workspace
+  * When using WSL, it might be a good idea to clone it somewhere in your Windows installation (for example: `cd /mnt/c/Users/{YourUser}/Documents`)
 * `git clone https://github.com/uorocketry/rocket-code-2020.git --recurse-submodules`
 * `cd rocket-code-2020`
 * Install the necessary libraries and build tools: `sudo ./install-dependencies.sh`
