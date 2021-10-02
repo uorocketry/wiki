@@ -17,7 +17,7 @@ To update the github submodules
 * `git submodule update --init --recursive`
 
 Once you are setup:
-- Try running the unit tests by running `./unitTests.sh` and make sure it all passes. Run the end-to-end test with `cd ./tests/octoberSky/; bash ./run_test.sh "Unix Makefiles"`
+- Try running the unit tests by running `./unitTest.sh` and make sure it all passes. Run the end-to-end test with `cd ./tests/octoberSky/; bash ./run_test.sh "Unix Makefiles"`
 
 - Check the stuff in the [Next Up column](https://github.com/uorocketry/rocket-code-2020/projects/1#column-14620035) in the GitHub project
 - Check out how to set up the environment variables with this wiki page https://github.com/uorocketry/rocket-code-2020/wiki/Environment-Variables
