@@ -5,7 +5,7 @@
 * cd into the desired workspace
 * `git clone https://github.com/uorocketry/rocket-code-2020.git --recurse-submodules`
 * `cd rocket-code-2020`
-* Install the necessary libraries and build tools: `sudo install-dependencies.sh`
+* Install the necessary libraries and build tools: `sudo ./install-dependencies.sh`
   * At the time of writing, the `install-dependencies.sh` script only supports Debian-based distros (ex: Debian, Ubuntu, etc.)
 * Compile the project with `./build.sh`
     * To run the Hotfire test code without a pi - `USE_RADIO=0 USE_GPIO=0 USE_WIRING_PI=0 HOTFIRE_TEST=1 ./build.sh`
