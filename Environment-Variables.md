@@ -24,10 +24,7 @@ Default is October Sky
 
 `USE_SBG`: Enable SBG Sensor
 
-`USE_SOCKET_CLIENT`: Enable TCP server that can control the states remotely
-
 `USE_INPUT`: Enable stdin listener that can control the states
-
 
 # Setup
 
