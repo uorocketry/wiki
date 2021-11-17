@@ -17,3 +17,8 @@ ssh pi@raspberrypi.local
 ## Additional notes
  - Some times, the hotspot turns off after 5 min of inactivity.
  - See the old tutorial if you want to connect the Raspberry Pi to a new network
+ - For Sensor Suite, the static ip is 192.168.1.250 port 22 - Username=pi - password=david
+ - For Fill Cart, the static ip is 192.168.1.150 port 22 - username=pi - password=raspberry 
+ - the router gateway is 192.168.1.1
+ - The router password is ipnhx30q07
+ - The password for the router is admin
