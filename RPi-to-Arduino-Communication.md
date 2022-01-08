@@ -1,6 +1,4 @@
-> This is a work in progress. Feedback is more than welcome.
-
-> This document talks about yet to be implemented features. If any changes are made while implementing the below features, this document should be changed to reflect how it was implemented.
+> WARNING: The RPi to Arduino functionality is mostly complete for now. However, the implementation is fairly different from what is described here. This document needs to be updated to reflect the current implementation.
 
 
 <!-- vim-markdown-toc GFM -->
