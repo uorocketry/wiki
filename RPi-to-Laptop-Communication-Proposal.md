@@ -8,6 +8,7 @@
 	* [Protobuf Messages](#protobuf-messages)
 	* [Verified Delivery](#verified-delivery)
 * [RocketCode Implementation](#rocketcode-implementation)
+* [Ground Station Implementation](#ground-station-implementation)
 
 <!-- vim-markdown-toc -->
 
@@ -63,3 +64,10 @@ Another important piece in the above diagram is the `GroundStationEncoder`. This
 
 Last thing to note is that the COBS encoding and decoding would probably have to be done in `SocketServer` and `Radio`. While ideally this part would also be done in `GroundStationEncoder`, the backends need to at least know when to split the incoming packets. With COBS, this is done at the 0x0 byte. Therefore, to keep everything together and consistent, the backends will only communicate with `GroundStationComm` with 'packets' (i.e. fixed length byte arrays). The code to convert to a byte stream (right now using COBS) will be found in the `SocketServer` and `Radio` backends. 
 
+# Ground Station Implementation
+
+The Ground Station implementation can be done similarly. Connection are handled with `TcpConnectionMethod`, `SerialConnectionMethod`, which handle converting the data received into byte array packets. Currently, it splits it by a fixed delimeter set in `AbstractConnectionMethod` that is currently a newline character. This can be changed to `0x0` for cobs. The COBS decoding can be done inside of an abstract method in `AbstractConnectionMethod` to reuse it in both TCP and Serial connections.
+
+The logic for calling the decoder can be handled in `DataProcessor.parseData`. `DataProcessor.parseData` should take in a fixed size byte stream and output a `DataHolder` containing the processed input data.
+
+For processing extra data such as pings, a new `SignalProcessor.parseData` function should be created that can be called by the `DeviceConnection` after calling `DataProcessor.parseData`. This class can save all the information that has different timestamps from the normal telemetry data.
