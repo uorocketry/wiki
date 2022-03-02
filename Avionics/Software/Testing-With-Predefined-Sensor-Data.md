@@ -1,3 +1,13 @@
+---
+title: Testing With Predefined Sensor Data
+description: 
+published: true
+date: 2022-03-02T22:55:54.736Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:34:24.009Z
+---
+
 To enable testing mode, define the `TESTING` environment variable.
 
 On Linux/WSL:
