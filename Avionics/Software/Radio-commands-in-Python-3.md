@@ -1,3 +1,13 @@
+---
+title: Radio commands in Python 3
+description: 
+published: true
+date: 2022-03-02T22:54:01.445Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:33:51.147Z
+---
+
 ### To setup the radio communication on the groundstation
 
 ```
