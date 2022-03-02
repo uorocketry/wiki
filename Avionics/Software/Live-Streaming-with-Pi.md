@@ -1,3 +1,13 @@
+---
+title: Live Streaming with Pi
+description: 
+published: true
+date: 2022-03-02T22:52:39.618Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:33:31.768Z
+---
+
 The raspberry pi can be used as a camera feed forwarder. To do this, connect a USB capture card to the pi, and it will act like a normal video source.
 
 If using a runcam, this can be connected with an AV capture card and a micro USB to TV-Out cable.
