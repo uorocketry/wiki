@@ -2,13 +2,13 @@
 title: Developing on Windows with VSCode
 description: 
 published: true
-date: 2022-03-02T22:46:49.632Z
+date: 2022-03-02T22:47:14.973Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:32:46.104Z
 ---
 
-If you want linting and error detection, you can use VSCode remote debugging. To compile in the command line, see [here](./Compiling-the-SBG-Library-on-Linux%5CUnix%5CWSL).
+If you want linting and error detection, you can use VSCode remote debugging. To compile in the command line, see [here](./Compiling-the-SBG-Library-on-Linux).
 
 VSCode supports remote debugging with WSL. First, install WSL.
 
