@@ -1,3 +1,13 @@
+---
+title: Add a new wifi network on the Raspberry-Pi
+description: 
+published: true
+date: 2022-03-02T22:44:57.934Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:32:06.953Z
+---
+
 This is if you want to add a new wifi network on the Raspberry Pi
 
 ## Requirements
