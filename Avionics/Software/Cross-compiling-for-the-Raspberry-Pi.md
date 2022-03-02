@@ -1,3 +1,13 @@
+---
+title: Cross compiling for the Raspberry-Pi
+description: 
+published: true
+date: 2022-03-02T22:45:51.262Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:32:33.270Z
+---
+
 You can cross compile the project for a raspberry pi on a Linux system.
 
 Make sure you have all the dependencies installed as outlined in the [Getting started page](Getting-started).
