@@ -1,4 +1,14 @@
-If you want linting and error detection, you can use VSCode remote debugging. To compile in the command line, see [here](Compiling-the-SBG-Library-on-Linux%5CUnix%5CWSL).
+---
+title: Developing on Windows with VSCode
+description: 
+published: true
+date: 2022-03-02T22:46:49.632Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:32:46.104Z
+---
+
+If you want linting and error detection, you can use VSCode remote debugging. To compile in the command line, see [here](./Compiling-the-SBG-Library-on-Linux%5CUnix%5CWSL).
 
 VSCode supports remote debugging with WSL. First, install WSL.
 
@@ -11,7 +21,7 @@ VSCode supports remote debugging with WSL. First, install WSL.
 
 3. Install CMake Tools Extension
 
-To setup CMake kits for different environement configurations, see [this document](Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin).
+To setup CMake kits for different environement configurations, see [this document](./Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin).
 
 **Note**: Remote WSL is like a new VSCode environment. You will have to reinstall most extensions.
 
