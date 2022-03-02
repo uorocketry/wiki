@@ -1,3 +1,13 @@
+---
+title: Environment Variables
+description: 
+published: true
+date: 2022-03-02T22:51:13.326Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:32:58.588Z
+---
+
 #### Projects
 Default is October Sky
 
@@ -8,9 +18,9 @@ Default is October Sky
 
 `SKIP_INIT`: Don't wait for sensors to initialize before switching to the first state.
 
-`TESTING`: Enable sensor testing and load sensor data from a testing file instead of real sensors. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Testing-With-Predefined-Sensor-Data)
+`TESTING`: Enable sensor testing and load sensor data from a testing file instead of real sensors. [See here](./Testing-With-Predefined-Sensor-Data)
 
-`USE_LOGGER`: Enable logging to a file. [See here](https://github.com/uorocketry/rocket-code-2020/wiki/Disable-Logging-To-A-File)
+`USE_LOGGER`: Enable logging to a file. [See here](./Disable-Logging-To-A-File)
 
 `TARGET_UPDATE_DURATION_NS`: Target duration for each logic update. Default: `33333333` (30 Hz)
 
@@ -34,4 +44,4 @@ On Linux/WSL:
 
 **Unset**: `unset <variable-Name>`
 
-You can also [set this up with Vscode](Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin)
+You can also [set this up with Vscode](./Set-Environement-Variable-In-Vscode-With-The-Cmake-Plugin)
