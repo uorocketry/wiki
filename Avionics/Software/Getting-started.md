@@ -1,3 +1,13 @@
+---
+title: Getting Started
+description: 
+published: true
+date: 2022-03-02T22:42:14.276Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:33:05.275Z
+---
+
 * If using Windows, install WSL: https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps
   * Both WSL 1 or WSL 2 should work. However, when in doubt, WSL 2 is probably a better choice.
 * Download VSCode https://code.visualstudio.com/Download
@@ -11,7 +21,7 @@
     * To run the Hotfire test code without a pi - `USE_RADIO=0 USE_GPIO=0 USE_WIRING_PI=0 HOTFIRE_TEST=1 ./build.sh`
 * You can now run the project locally with - `./run.sh`
 
-If on Windows, see [Developing on Windows with VSCode](Developing-on-Windows-with-VSCode)
+If on Windows, see [Developing on Windows with VSCode](./Developing-on-Windows-with-VSCode)
 
 To update the github submodules
 * `git submodule update --init --recursive`
