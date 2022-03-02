@@ -1,29 +1,14 @@
+---
+title: RPi to Arduino Communication
+description: 
+published: true
+date: 2022-03-02T22:53:14.086Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:33:38.146Z
+---
+
 > WARNING: The RPi to Arduino functionality is mostly complete for now. However, the implementation is fairly different from what is described here. This document needs to be updated to reflect the current implementation.
-
-
-<!-- vim-markdown-toc GFM -->
-
-* [Overview](#overview)
-	* [Goals](#goals)
-* [Communication](#communication)
-	* [Communication Stack](#communication-stack)
-	* [Protobuf Messages](#protobuf-messages)
-		* [ArduinoIn](#arduinoin)
-			* [Ping](#ping)
-			* [Servo](#servo)
-			* [Digital](#digital)
-			* [Reset](#reset)
-			* [PingFailsafeReset](#pingfailsafereset)
-		* [ArduinoOut](#arduinoout)
-			* [Acknowledgement](#acknowledgement)
-			* [Error](#error)
-			* [ArduinoInfo](#arduinoinfo)
-			* [ResetEvent](#resetevent)
-	* [Example Communication](#example-communication)
-		* [Servo and Pin Control](#servo-and-pin-control)
-		* [Unexpected Arduino Reset](#unexpected-arduino-reset)
-
-<!-- vim-markdown-toc -->
 
 # Overview
 
