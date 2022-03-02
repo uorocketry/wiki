@@ -1,16 +1,13 @@
+---
+title: RPi to Laptop Communication Proposal
+description: 
+published: true
+date: 2022-03-02T22:53:40.146Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:33:44.806Z
+---
 
-<!-- vim-markdown-toc GFM -->
-
-* [Overview](#overview)
-	* [Goals](#goals)
-* [Communication](#communication)
-	* [Communication Stack](#communication-stack)
-	* [Protobuf Messages](#protobuf-messages)
-	* [Verified Delivery](#verified-delivery)
-* [RocketCode Implementation](#rocketcode-implementation)
-* [Ground Station Implementation](#ground-station-implementation)
-
-<!-- vim-markdown-toc -->
 
 # Overview
 Currently, the RPi communicates with the Ground Station in two formats. For sending information to the GS (Ground Station), a CSV format is used, sending the raw strings. For receiving information from the GS, a single byte is used per 'message'.
