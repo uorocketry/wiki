@@ -1,3 +1,13 @@
+---
+title: Info and Error Logging in the Rocket-Code
+description: 
+published: true
+date: 2022-03-02T22:52:16.305Z
+tags: 
+editor: markdown
+dateCreated: 2022-02-28T22:33:25.114Z
+---
+
 The [spdlog library](https://github.com/gabime/spdlog) is used for logging informational and error messages in the rocket-code. At the time of writing, it has been configured to log to a file and the console.
 
 ## Usage
