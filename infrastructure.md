@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-03-03T17:53:46.920Z
+date: 2022-03-03T17:55:08.778Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:11:48.525Z
@@ -34,7 +34,11 @@ The VPS can only be accessed using a SSH key. To add an SSH public key to the VP
 
 Once the ssh key is added to the VPS, you can login: `ssh rocketry@box1.infra.uorocketry.ca`.
 
-Please refrain from logging in using `root`. Instead use the `rocketry` user. For the password of the VPS, again ask either an existing team member or look into the password manager. 
+Please refrain from logging in using `root`. Instead use the `rocketry` user. For the password of the VPS, again ask either an existing team member or look into the password manager.
+
+## Firewall
+
+The Hetzner firewall is used. No firewall is configured on the actual VPS.
 
 ## Docker
 
