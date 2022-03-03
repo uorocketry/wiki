@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2022-03-03T00:52:17.669Z
+date: 2022-03-03T18:00:22.864Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:12:35.283Z
@@ -21,4 +21,4 @@ Every 5 minutes, the wiki does a backup to https://github.com/uorocketry/wiki. W
 
 ## Search Engine
 
-A local Elasticsearch instance is used as the search engine. It provides slightly better search than the Postgres engine. However, it's memory usage is significently higher.
+A local Elasticsearch instance is used as the search engine. It provides slightly better search than the Postgres engine. However, its memory usage is significantly higher, so we could switch back to Postgres if we need more RAM in the future.
