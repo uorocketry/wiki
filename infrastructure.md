@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-03-03T17:50:59.392Z
+date: 2022-03-03T17:52:56.419Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:11:48.525Z
@@ -73,7 +73,7 @@ The configuration for routing to the various containers is found in the service'
 ```
 Those parameters define a `wikijs` router on the `https` entrypoint. The router handles any URL with the host `avwiki.uorocketry.ca`, and forwards the requests to the `wikijs` service. The `wikijs` service does load-balancing and sends the traffic to the port `3000`.
 
-> The load-balancer service is used even if there is a single container to send traffic to.
+> The load-balancer service is used even if traffic is being sent to a single container
 
 Note that the `proxy` network is also specified for the container. The specific Traefik configuration that we are using uses this Docker network to communicate between Traefik and containers.
 
