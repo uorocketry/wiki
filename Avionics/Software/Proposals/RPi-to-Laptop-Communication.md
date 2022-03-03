@@ -1,8 +1,8 @@
 ---
-title: RPi to Laptop Communication Proposal
+title: RPi to Laptop Communication
 description: 
 published: true
-date: 2022-03-02T22:53:41.834Z
+date: 2022-03-03T18:10:20.810Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:44.806Z
