@@ -2,7 +2,7 @@
 title: RPi to Laptop Communication
 description: 
 published: true
-date: 2022-03-03T18:10:22.618Z
+date: 2022-03-03T22:47:21.593Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:44.806Z
@@ -36,7 +36,7 @@ Next, we need to have a way to detect errors that would be happening during the 
 Finally, because serial and TCP only send streams of bytes, we need to be able to combine those bytes into packets. For this, we use [COBS](https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing) to provide packet framing. This allows to use the 0x0 byte to separate each of the packets.
 
 All together, here is how the communication stack would look when using serial. Using TCP would be similar, but with the lower 'Serial" layer replaced with "TCP":
-![](images/Arduino_Comm_Stack.png)
+![](/images/Arduino_Comm_Stack.png)
 
 ## Protobuf Messages
 
@@ -53,7 +53,7 @@ Why not have a form of automated check that a message arrived successfully? Well
 Currently, the communication is spread across the various `Socket*.cpp` files for TCP, and `Radio.cpp` for Serial/Radio communication.
 
 To try to reuse as much as possible, a new class called `GroundStationComm` could be introduced. Here is an overview how it might fit with the rest of the code:
-![](images/Overview_RocketCode_Comm.png)
+![](/images/Overview_RocketCode_Comm.png)
 
 As the above diagram shows, `GroundStationComm` would use generics, so it can easily have both the `SocketServer` or `Radio` backends. `GroundStationComm` would contain code pertaining to any logic for talking with the Ground Station, and converting between various internal types/structures and Protobuf byte arrays. The only type of data transmitted between the various backends and `GroundStationComm` would be a form of byte arrays. Those backends should never see any internal types (ex: `sensorData`) or Protobuf objects.
 
