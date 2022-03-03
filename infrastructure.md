@@ -2,16 +2,16 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-03-03T00:13:04.623Z
+date: 2022-03-03T00:14:50.628Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:11:48.525Z
 ---
 
 Currently we are hosting 3 services. See their respective page for more information:
-- Wiki.js
-- Rocket.chat
-- Jitsi
+- [Wiki.js](./infrastructure/wiki)
+- [Rocket.chat](./infrastructure/rocket-chat)
+- [Jitsi](./infrastructure/jitsi)
 
 
 # Overview
