@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-03-03T17:55:08.778Z
+date: 2022-03-03T17:56:00.784Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:11:48.525Z
@@ -58,7 +58,7 @@ Traefik has two important roles: handling TLS (i.e. HTTPS), and routing traffic 
 The configuration is split across a few files:
 - `docker-compose.yml`: Docker Compose file for starting the container
 - `traefik.yml`: Traefik configuration file. Most of the Traefik configuration is found here.
-- `dyn.yml`: More Traefik configuration. This is included in the `traefik.yml` using a file provider. While this file is probably not needed, it does help with organization and allowing the reuse of some configuration across entrypoints.
+- `dyn.yml`: More Traefik configuration. This is included in `traefik.yml` using a file provider. While this file is probably not needed, it does help with organization and allowing the reuse of some configuration across entrypoints.
 - `acme.json`: Automatically generated file. Stores the TLS certificates. Don't modify this manually.
 
 Together, the above files specify the allowed entry points (80 and 443), and configures the TLS options for the 443 port.
