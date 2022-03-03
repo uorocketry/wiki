@@ -2,7 +2,7 @@
 title: RPi to Arduino Communication
 description: 
 published: true
-date: 2022-03-03T18:09:44.650Z
+date: 2022-03-03T22:46:44.767Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:38.146Z
@@ -36,10 +36,10 @@ Next, we need to have a way to detect errors that would be happening during the 
 Finally, because serial only send streams of bytes, we need to be able to combine those bytes into packets. For this, we use [COBS](https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing) to provide packet framing. This allows to use the 0x0 byte to separate each of the packets.
 
 All together, here is how the communication stack looks:
-![](images/Arduino_Comm_Stack.png)
+![](/images/Arduino_Comm_Stack.png)
 
 Or, another way to look at it:
-![](images/Arduino_Comm_Stack_2.png)
+![](/images/Arduino_Comm_Stack_2.png)
 
 ## Protobuf Messages
 
