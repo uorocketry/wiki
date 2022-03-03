@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2022-03-03T00:23:25.009Z
+date: 2022-03-03T00:52:17.669Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:12:35.283Z
@@ -18,3 +18,7 @@ Every 5 minutes, the wiki does a backup to https://github.com/uorocketry/wiki. W
 
 > Wiki.js seems to have a bug with the bi-directional sync. For some reason, it seems to get stuck at past git commits from time to time, overriding changes made in the wiki since then. If it is desired to make any change using the Git repo (say because of a major change that is more easily done outside of Wiki.js) please change the setting back to push as soon as possible.
 {.is-warning}
+
+## Search Engine
+
+A local Elasticsearch instance is used as the search engine. It provides slightly better search than the Postgres engine. However, it's memory usage is significently higher.
