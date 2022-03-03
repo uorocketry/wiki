@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-03-03T17:50:36.359Z
+date: 2022-03-03T17:50:59.392Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-03T00:11:48.525Z
@@ -61,8 +61,7 @@ Together, the above files specify the allowed entry points (80 and 443), and con
 The configuration for routing to the various containers is found in the service's respective `docker-compose.yml` file. For example, here is the one for the wiki:
 ```yml
 ...
-
-		networks:
+    networks:
       - proxy
     labels:
       - "traefik.enable=true"
@@ -70,7 +69,6 @@ The configuration for routing to the various containers is found in the service'
       - "traefik.http.routers.wikijs.rule=Host(`avwiki.uorocketry.ca`)"
       - "traefik.http.routers.wikijs.service=wikijs"
       - "traefik.http.services.wikijs.loadbalancer.server.port=3000"
-      
 ...
 ```
 Those parameters define a `wikijs` router on the `https` entrypoint. The router handles any URL with the host `avwiki.uorocketry.ca`, and forwards the requests to the `wikijs` service. The `wikijs` service does load-balancing and sends the traffic to the port `3000`.
