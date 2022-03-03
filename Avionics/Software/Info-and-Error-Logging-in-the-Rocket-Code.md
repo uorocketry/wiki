@@ -2,7 +2,7 @@
 title: Info and Error Logging in the Rocket-Code
 description: 
 published: true
-date: 2022-03-02T22:52:16.305Z
+date: 2022-03-02T22:52:18.090Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:25.114Z

@@ -2,7 +2,7 @@
 title: Send Folder via SSH
 description: 
 published: true
-date: 2022-03-02T22:54:41.788Z
+date: 2022-03-02T22:54:43.453Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:34:03.843Z

@@ -2,7 +2,7 @@
 title: Data Format for 2020 October-Sky Launch
 description: 
 published: true
-date: 2022-03-02T22:46:12.776Z
+date: 2022-03-02T22:46:14.596Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:32:39.718Z

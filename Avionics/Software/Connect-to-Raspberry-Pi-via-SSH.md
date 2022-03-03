@@ -2,7 +2,7 @@
 title: Connect to Raspberry Pi via SSH
 description: 
 published: true
-date: 2022-03-02T22:45:17.091Z
+date: 2022-03-02T22:45:18.824Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:32:20.129Z

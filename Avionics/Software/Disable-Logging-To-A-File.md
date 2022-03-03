@@ -2,7 +2,7 @@
 title: Disable Logging To A File
 description: 
 published: true
-date: 2022-03-02T22:50:37.127Z
+date: 2022-03-02T22:50:38.855Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:32:52.343Z

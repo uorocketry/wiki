@@ -2,7 +2,7 @@
 title: Set Environement Variable In Vscode With The Cmake Plugin
 description: 
 published: true
-date: 2022-03-02T22:55:10.231Z
+date: 2022-03-02T22:55:11.947Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:34:10.634Z

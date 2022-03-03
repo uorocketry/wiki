@@ -2,7 +2,7 @@
 title: Cross compiling for the Raspberry-Pi
 description: 
 published: true
-date: 2022-03-02T22:48:17.229Z
+date: 2022-03-02T22:48:18.917Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:32:33.270Z

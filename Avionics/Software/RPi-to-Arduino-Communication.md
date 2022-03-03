@@ -2,7 +2,7 @@
 title: RPi to Arduino Communication
 description: 
 published: true
-date: 2022-03-02T22:53:14.086Z
+date: 2022-03-02T22:53:15.891Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:38.146Z
