@@ -2,13 +2,13 @@
 title: Software
 description: 
 published: true
-date: 2022-03-02T23:00:13.187Z
+date: 2022-03-03T00:25:44.505Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:11.944Z
 ---
 
-Welcome to the rocket-code-2020 wiki!
+Welcome to the Avionics Software wiki!
 
 See [getting started](./Software/Getting-started) if you are new.
 
