@@ -1,8 +1,8 @@
 ---
-title: Getting Started
+title: Getting Started with the Rocket-Code
 description: 
 published: true
-date: 2022-03-09T01:53:04.296Z
+date: 2022-03-09T02:17:38.975Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:05.275Z
