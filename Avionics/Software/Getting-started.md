@@ -2,7 +2,7 @@
 title: Getting Started
 description: 
 published: true
-date: 2022-03-02T22:42:15.979Z
+date: 2022-03-09T01:53:04.296Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:05.275Z
@@ -16,7 +16,6 @@ dateCreated: 2022-02-28T22:33:05.275Z
 * `git clone https://github.com/uorocketry/rocket-code-2020.git --recurse-submodules`
 * `cd rocket-code-2020`
 * Install the necessary libraries and build tools: `sudo ./install-dependencies.sh`
-  * At the time of writing, the `install-dependencies.sh` script only supports Debian-based distros (ex: Debian, Ubuntu, etc.)
 * Compile the project with `./build.sh`
     * To run the Hotfire test code without a pi - `USE_RADIO=0 USE_GPIO=0 USE_WIRING_PI=0 HOTFIRE_TEST=1 ./build.sh`
 * You can now run the project locally with - `./run.sh`
