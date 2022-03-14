@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-03-14T13:11:08.797Z
+date: 2022-03-14T13:12:24.731Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -23,7 +23,7 @@ dateCreated: 2022-03-12T17:58:46.492Z
 
 - Have 1 interface per state machine
 - Each State object is specific per state machine
-- Each State object have a 1-to-1 relation with a Protobuf message
+- Each State object has a 1-to-1 relation with a Protobuf message
   - i.e. there is a HotFire Protobuf message, OctoberSky Protobuf message, etc.
 - Continue sending the whole state of the main state machine to the ground station
 
