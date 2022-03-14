@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-03-14T13:16:21.508Z
+date: 2022-03-14T13:17:29.646Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -46,6 +46,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
   - The PubSub broker can live "alongside" the interface. Things have the option to push events to the broker.
   - The interface can either take data directly from IO, or add it to its state from events.
   - The interface state would need in this case to be persistent across loops.
+  - All IO is still started initially by the interface.
 - Configuration could be done with some form of config file, e.g. YAML
   - e.g. all the GPIO configuration is done in a YAML file instead of preprocessor flags
   - There is one file per project (one for Hotfire, one for OctoberSky, etc.)
