@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-03-14T13:13:48.330Z
+date: 2022-03-14T13:16:21.508Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -49,3 +49,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 - Configuration could be done with some form of config file, e.g. YAML
   - e.g. all the GPIO configuration is done in a YAML file instead of preprocessor flags
   - There is one file per project (one for Hotfire, one for OctoberSky, etc.)
+- Each IO that connects to the PubSub broker has a unique ID for that project:
+  - e.g. `temperature1`, `temperature2`, etc.
+  - Allows multiple of the same IO component.
+  - This ID could either be in the message itself, or as the PubSub subject (or both)
