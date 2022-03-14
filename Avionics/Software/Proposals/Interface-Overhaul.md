@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-03-14T13:09:25.611Z
+date: 2022-03-14T13:11:08.797Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -22,7 +22,10 @@ dateCreated: 2022-03-12T17:58:46.492Z
 # Idea 1
 
 - Have 1 interface per state machine
-- Continue sending the whole state of the main state machine to the ground station 
+- Each State object is specific per state machine
+- Each State object have a 1-to-1 relation with a Protobuf message
+  - i.e. there is a HotFire Protobuf message, OctoberSky Protobuf message, etc.
+- Continue sending the whole state of the main state machine to the ground station
 
 
 ```diagram
