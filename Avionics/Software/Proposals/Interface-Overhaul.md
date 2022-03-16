@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-03-16T16:49:07.101Z
+date: 2022-03-16T16:50:00.047Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -73,5 +73,5 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
   - Events are messages that should have an immediate action (say, trigger GPIO pin 7).
   - Instead of going through the interface, events are sent to the event forwarder. It collects any events and sends them to the appropriate place.
   - Events don't directly update the state. Instead, it's each service job to update it as needed. e.g. a GPIO event is sent, the GPIO service can optionally change its state to reflect this.
-- The State Inerface could also have the job of starting all the services.
+- The State Interface could also have the job of starting all the services.
 - Most services should not be project specific. Only the State Interface should change between projects. Any project-specific service configuration should be done inside the interface.
