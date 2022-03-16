@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-03-16T16:50:00.047Z
+date: 2022-03-16T16:51:02.269Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -75,3 +75,4 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
   - Events don't directly update the state. Instead, it's each service job to update it as needed. e.g. a GPIO event is sent, the GPIO service can optionally change its state to reflect this.
 - The State Interface could also have the job of starting all the services.
 - Most services should not be project specific. Only the State Interface should change between projects. Any project-specific service configuration should be done inside the interface.
+  - The state machines might have to be the exception to this rule.
