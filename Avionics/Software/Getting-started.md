@@ -2,7 +2,7 @@
 title: Getting Started with the Rocket-Code
 description: 
 published: true
-date: 2022-03-09T02:17:38.975Z
+date: 2022-03-24T14:50:24.461Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:05.275Z
@@ -17,7 +17,7 @@ dateCreated: 2022-02-28T22:33:05.275Z
 * `cd rocket-code-2020`
 * Install the necessary libraries and build tools: `sudo ./install-dependencies.sh`
 * Compile the project with `./build.sh`
-    * To run the Hotfire test code without a pi - `USE_RADIO=0 USE_GPIO=0 USE_WIRING_PI=0 HOTFIRE_TEST=1 ./build.sh`
+    * To run the Hotfire test code without a pi - `USE_LOGGER=0 USE_GPIO=0 HOTFIRE_TEST=1 ./build.sh`
 * You can now run the project locally with - `./run.sh`
 
 If on Windows, see [Developing on Windows with VSCode](./Developing-on-Windows-with-VSCode)
