@@ -2,7 +2,7 @@
 title: Usage
 description: 
 published: true
-date: 2022-03-29T16:45:38.772Z
+date: 2022-03-29T16:46:19.872Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-29T16:45:07.781Z
@@ -14,7 +14,7 @@ Connect to via ssh to the sensor suite raspberry pi (See [here](/en/Avionics/Sof
 
 Logs to file to until Ctrl c in data-unixtimestamp. Prints data every second
 
-```bashbash
+```bash
 cd Cistern/code
 python3 Main.py
 ```
