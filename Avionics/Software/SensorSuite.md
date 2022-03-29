@@ -2,13 +2,13 @@
 title: Usage
 description: 
 published: true
-date: 2022-03-29T16:45:07.781Z
+date: 2022-03-29T16:45:38.772Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-29T16:45:07.781Z
 ---
 
-Connect to via ssh to the sensor suite raspberry pi (See [here](Avionics/Software/Connect-to-Raspberry-Pi-via-SSH) for the ip)
+Connect to via ssh to the sensor suite raspberry pi (See [here](/en/Avionics/Software/Connect-to-Raspberry-Pi-via-SSH) for the ip)
 
 ## Normal Usage
 
