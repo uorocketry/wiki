@@ -2,7 +2,7 @@
 title: Usage
 description: 
 published: true
-date: 2022-03-29T16:46:19.872Z
+date: 2022-03-29T16:47:09.755Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-29T16:45:07.781Z
@@ -20,7 +20,7 @@ python3 Main.py
 ```
 
 ## Testing if everything is connected
-Prints data from pressure sensor and other sensors **once** to the screen for testing purposes
+Prints data from pressure sensor and other sensors **for 10 seconds** to the screen for testing purposes
 
 ```bash
 cd Cistern/code
