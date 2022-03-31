@@ -1,8 +1,8 @@
 ---
-title: RPi to Arduino Communication
+title: Arduino IO Proxy
 description: 
 published: true
-date: 2022-03-31T12:35:29.113Z
+date: 2022-03-31T12:35:54.654Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-31T12:35:29.113Z
