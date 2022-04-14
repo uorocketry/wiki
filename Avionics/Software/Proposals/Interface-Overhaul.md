@@ -2,7 +2,7 @@
 title: Overhaul
 description: 
 published: true
-date: 2022-04-14T12:31:33.175Z
+date: 2022-04-14T12:34:15.585Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-12T17:58:46.492Z
@@ -78,3 +78,4 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 - The State Interface could also have the job of starting all the services.
 - Most services should not be project specific. Only the State Interface should change between projects. Any project-specific service configuration should be done inside the interface.
   - The state machines might have to be the exception to this rule.
+  - GroundStationComm is also annoying here. Most parts are not project specific, but some of the logic may be. Maybe we can use some template magic to help us here?
