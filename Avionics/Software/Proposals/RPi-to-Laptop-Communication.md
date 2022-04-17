@@ -2,12 +2,14 @@
 title: RPi to Laptop Communication
 description: 
 published: true
-date: 2022-03-03T22:47:21.593Z
+date: 2022-04-17T15:32:50.539Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:44.806Z
 ---
 
+
+> This document is maybe outdated. MAVLink may be better to achieve this than Protobuf.
 
 # Overview
 Currently, the RPi communicates with the Ground Station in two formats. For sending information to the GS (Ground Station), a CSV format is used, sending the raw strings. For receiving information from the GS, a single byte is used per 'message'.
