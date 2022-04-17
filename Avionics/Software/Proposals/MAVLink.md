@@ -2,7 +2,7 @@
 title: MAVLink
 description: 
 published: true
-date: 2022-04-17T15:30:20.031Z
+date: 2022-04-17T15:31:03.748Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-17T15:29:36.110Z
@@ -43,7 +43,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 
 ## Background
 
-The RFD900+ supports multi-point networking. While doing this, one station acts as a "base" and always must be kept in range of all other nodes. The reason why the base is needed is that the RFD900 does some frequency hopping, so the base is there to synchronize all the radios together.
+The RFD900+ supports multi-point networking. While doing this, one station acts as a "base" and always must be kept in range of all other nodes. The base is needed because the RFD900 does some frequency hopping, so the base synchronizes all the radios together.
 
 ## Relay/Repeater
 
