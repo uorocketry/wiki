@@ -2,7 +2,7 @@
 title: MAVLink
 description: 
 published: true
-date: 2022-05-01T22:34:05.227Z
+date: 2022-05-01T22:36:19.340Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-17T15:29:36.110Z
@@ -14,6 +14,8 @@ https://mavlink.io
 MAVLink is a lightweight messaging protocol designed to communicate with drones. While we don't have a drone per se, this protocol is design to solve a lot of the problems that we are facing: reliable communications over a radio link.
 
 MAVLink is not only limited to radio. Pretty much, it can be used with anything that exposes a byte stream. Therefore, MAVLink packets can be sent over Serial, TCP, UDP, etc.
+
+This protocol could also be used between any components on the rocket. In other words, it could potentially be an alternative to CAN bus.
 
 ## Rocket-Code
 - `RadioMAVLink` and `TcpMAVLink` contain any code to read MAVLink packets from the network.
