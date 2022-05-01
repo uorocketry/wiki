@@ -2,7 +2,7 @@
 title: MAVLink
 description: 
 published: true
-date: 2022-05-01T22:33:15.478Z
+date: 2022-05-01T22:34:05.227Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-17T15:29:36.110Z
@@ -26,7 +26,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 
 
 ## Routing
-MAVLink doesn't need to be limited to ground station communication. The protocol has a *systemd id* and *component id*  that can be used to target a specific system. Therefore, MAVLink could even be used to communicate across components on the rocket itself, say with the IO proxy. A simple router similar to the [one Ardupilot has](https://ardupilot.org/dev/docs/mavlink-routing-in-ardupilot.html) could also be developed if the number of components starts to get large.
+MAVLink doesn't need to be limited to ground station communication. The protocol has a *systemd id* and *component id*  that can be used to target a specific system. Therefore, MAVLink could even be used to communicate across components on the rocket itself, say with the IO proxy. A simple router similar to the [one Ardupilot has](https://ardupilot.org/dev/docs/mavlink-routing-in-ardupilot.html) could also be developed if the number of components starts to get high.
 
 # Radio Communication
 - Single RFD900+ on the Ground Station acting as a base (Node 0).
