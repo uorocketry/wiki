@@ -2,7 +2,7 @@
 title: MAVLink
 description: 
 published: true
-date: 2022-04-17T15:31:03.748Z
+date: 2022-05-01T22:33:15.478Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-17T15:29:36.110Z
@@ -44,6 +44,12 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 ## Background
 
 The RFD900+ supports multi-point networking. While doing this, one station acts as a "base" and always must be kept in range of all other nodes. The base is needed because the RFD900 does some frequency hopping, so the base synchronizes all the radios together.
+
+## RSSI
+
+The RFD900+ has a MAVLink mode. When enabled and the radio detects MAVLink heartbeat packets, it will periodically inject MAVLink packets with RSSI information in the data stream. This would allow the ground station to display this information. See the Ardupilot wiki for more info:
+
+https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html#mavlink-reporting
 
 ## Relay/Repeater
 
