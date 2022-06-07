@@ -2,7 +2,7 @@
 title: Mavlink
 description: 
 published: true
-date: 2022-06-04T22:08:03.215Z
+date: 2022-06-07T02:37:43.458Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-04T21:52:02.593Z
@@ -11,7 +11,7 @@ dateCreated: 2022-06-04T21:52:02.593Z
 ### Read mavlink data over serial with python
 
 
-> Note: To access `/dev/ttyUSB` on Linux without root, you may need to add your user to a user group
+> Note: To access `/dev/ttyUSB` on Linux without root, you may need to add your user to a user group, then logout
 > ```bash
 > sudo usermod -a -G uucp <your-username-goes-here>
 > ```
