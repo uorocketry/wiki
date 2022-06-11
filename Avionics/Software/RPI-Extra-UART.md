@@ -2,13 +2,12 @@
 title: Extra UARTs on the Raspberry Pi
 description: 
 published: true
-date: 2022-06-11T17:12:34.310Z
+date: 2022-06-11T17:13:40.459Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-11T17:12:34.310Z
 ---
 
-# Raspbery Pi UARTs
 By default, the RPi has 1 UART enabled for GPIO (there is another for Bluetooth, but let's ignore that one for now). However, it's possible to enable up to 6 UARTs.
 
 To enable a UART just add this line to the end of the `/boot/config.txt` file:
