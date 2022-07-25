@@ -2,7 +2,7 @@
 title: Live Streaming with Pi
 description: 
 published: true
-date: 2022-07-25T23:33:48.989Z
+date: 2022-07-25T23:44:16.363Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-28T22:33:31.768Z
@@ -89,3 +89,26 @@ To set max bandwith usage, see https://superuser.com/questions/945413/how-to-con
 > If you'd like, you can try lower values for `bufsize`, like for every three or four seconds, just to see how the value changes how your output looks. Then you can determine how much you should worry about it for your video.
 > 
 > There is no normal value, really - what `crf` does is to optimize output based on what it thinks is the best buffer size for maintaining whatever it's rate is set at. It tries to keep as low a file size while maintaining some quality, at the cost of occasional spikes.
+
+It's also possible to limit the bandwith of the entire pi: https://unix.stackexchange.com/questions/28198/how-to-limit-network-bandwidth
+
+> You can throttle the network bandwidth on the interface using the command called tc Man page available at http://man7.org/linux/man-pages/man8/tc.8.html
+> 
+> For a simple script, try wondershaper.
+> 
+> An example from using tc: tc qdisc add dev eth0 root tbf rate 1024kbit latency 50ms burst 1540
+> ***
+>
+> **wondershaper** - An easy tool to limit bandwidth of a particular interface.
+> 
+> 	`sudo wondershaper {interface} {down} {up}`
+> 
+> the {down} and {up} are bandwidth in kpbs
+> 
+> So for example if you want to limit the bandwidth of interface eth1 to 256kbps downlink and 128kbps uplink,
+> 
+> 	`sudo wondershaper eth1 256 128`
+> 
+> To clear the limit,
+> 
+> 	`sudo wondershaper clear eth1 `
