@@ -2,7 +2,7 @@
 title: Hardware Requirements
 description: 
 published: true
-date: 2022-09-14T02:29:20.763Z
+date: 2022-09-14T02:29:27.473Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T02:13:51.619Z
@@ -16,7 +16,7 @@ All chips must:
 - Have a blue communication LED. Connected to a digital out pin on the MCU.
 - Have a red error LED. Connected to a digital out pin on the MCU.
 - Expose SWD debug connection to the chip.
-  - Must have standard connector. Need to research what is the name of this connection. See https://www.st.com/en/development-tools/stlink-v3set.html or https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/ for the debugger that we'll use.
+  - Must have standard connector. Need to research what is the name of this connection. See https://www.st.com/en/development-tools/stlink-v3set.html or https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/ for the debuggers that we'll use.
 - Use the STM32G431KBT6 MCU.
 - Communicate to other chips using FDCAN.
 
