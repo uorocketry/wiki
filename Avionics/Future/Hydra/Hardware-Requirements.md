@@ -2,7 +2,7 @@
 title: Hardware Requirements
 description: 
 published: true
-date: 2022-09-14T02:29:27.473Z
+date: 2022-09-14T02:41:36.135Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T02:13:51.619Z
@@ -39,6 +39,13 @@ No special requirements
 ## Load Cell Board
 - TODO
 
+## Servo Board
+- Connect to a single servo using PWM
+
+## Main Valve Board
+- Custom built H-Bridge chip
+- Connect two limit switches to digital inputs
+- Connect H-Bridge control to PWM or digital output as appropriate
 
 # Resources
 ADC Tips: https://www.st.com/resource/en/application_note/an5346-stm32g4-adc-use-tips-and-recommendations-stmicroelectronics.pdf
