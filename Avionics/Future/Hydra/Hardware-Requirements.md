@@ -2,7 +2,7 @@
 title: Hardware Requirements
 description: 
 published: true
-date: 2022-09-14T02:17:50.111Z
+date: 2022-09-14T02:24:58.040Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T02:13:51.619Z
@@ -16,7 +16,7 @@ All chips must:
 - Have a blue communication LED. Connected to a digital out pin on the MCU.
 - Have a red error LED. Connected to a digital out pin on the MCU.
 - Expose SWD debug connection to the chip.
-  - Must have standard connector (https://www.sparkfun.com/products/15364)
+  - Must have standard connector (https://www.sparkfun.com/products/15364 https://www.st.com/en/development-tools/stlink-v3set.html)
 - Use the STM32G431KBT6 MCU.
 - Communicate to other chips using FDCAN.
 
