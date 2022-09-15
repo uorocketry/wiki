@@ -2,7 +2,7 @@
 title: STM32 PWM/Servo
 description: A brief guide on how to get started with STM32 PWM (Pulse Width Modulation) and servo control. Required components for this guide are the STM32CubeIDE and the STM32 HAL (Hardware Abstraction Libary).
 published: true
-date: 2022-09-15T20:36:14.279Z
+date: 2022-09-15T20:36:58.011Z
 tags: 
 editor: code
 dateCreated: 2022-09-15T20:36:14.279Z
@@ -10,7 +10,7 @@ dateCreated: 2022-09-15T20:36:14.279Z
 
 <h1>STM32 PWM/Servo</h1>
 
-<p>This brief guide goes over how to use PWM (Pulse Width Modulation) on the STM32 system for servo control. To easily follow this guide download the STM32CubeIDE and use the STM32G431KB for the example. To start, we need to call a TIM_HandleTypeDef constructor with a PWM timer supported by a peripheral clock. Depending on the size of the timer create an integer variable of size corresponding to the timer size (e.g. 16 bit, int16_t). We will use the variable to manipulate the channel duty cycle. The duty cycle is the ratio of the pulse width to the pulse period. An easy naming convention is CHx_DC. Initialize CHx_DC to 0. We can set the duty cycle by the function Duty Cycle = (CCRx + 1) / (ARR + 1) => CCRx = (Duty Cycle x (ARR + 1)) - 1, where CCRx is the channels Capture Compare Register and ARR is the Auto Reload Register. The PWM frequency can be calculated using the formula F(pwm) = F(tim) / ((ARR + 1) x (PSC +1)), where F(tim) is the frequency of the timer, PSC is the clock prescaler. We can also calculate thenumber of possible duty cycle values and tell the precision. Resolution(steps) = F(tim) / F(pwm) and Resolution(bits) = log2(F(tim)/F(pwm)).</p>
+<p>To start, we need to call a TIM_HandleTypeDef constructor with a PWM timer supported by a peripheral clock. Depending on the size of the timer create an integer variable of size corresponding to the timer size (e.g. 16 bit, int16_t). We will use the variable to manipulate the channel duty cycle. The duty cycle is the ratio of the pulse width to the pulse period. An easy naming convention is CHx_DC. Initialize CHx_DC to 0. We can set the duty cycle by the function Duty Cycle = (CCRx + 1) / (ARR + 1) => CCRx = (Duty Cycle x (ARR + 1)) - 1, where CCRx is the channels Capture Compare Register and ARR is the Auto Reload Register. The PWM frequency can be calculated using the formula F(pwm) = F(tim) / ((ARR + 1) x (PSC +1)), where F(tim) is the frequency of the timer, PSC is the clock prescaler. We can also calculate thenumber of possible duty cycle values and tell the precision. Resolution(steps) = F(tim) / F(pwm) and Resolution(bits) = log2(F(tim)/F(pwm)).</p>
 
 <h3>Example. Servo control on STM32G431KB.</h3>
 
