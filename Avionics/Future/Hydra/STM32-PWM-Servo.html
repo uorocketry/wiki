@@ -1,0 +1,32 @@
+<!--
+title: STM32 PWM/Servo
+description: A brief guide on how to get started with STM32 PWM (Pulse Width Modulation) and servo control. Required components for this guide are the STM32CubeIDE and the STM32 HAL (Hardware Abstraction Libary).
+published: true
+date: 2022-09-15T20:36:14.279Z
+tags: 
+editor: code
+dateCreated: 2022-09-15T20:36:14.279Z
+-->
+
+<h1>STM32 PWM/Servo</h1>
+
+<p>This brief guide goes over how to use PWM (Pulse Width Modulation) on the STM32 system for servo control. To easily follow this guide download the STM32CubeIDE and use the STM32G431KB for the example. To start, we need to call a TIM_HandleTypeDef constructor with a PWM timer supported by a peripheral clock. Depending on the size of the timer create an integer variable of size corresponding to the timer size (e.g. 16 bit, int16_t). We will use the variable to manipulate the channel duty cycle. The duty cycle is the ratio of the pulse width to the pulse period. An easy naming convention is CHx_DC. Initialize CHx_DC to 0. We can set the duty cycle by the function Duty Cycle = (CCRx + 1) / (ARR + 1) => CCRx = (Duty Cycle x (ARR + 1)) - 1, where CCRx is the channels Capture Compare Register and ARR is the Auto Reload Register. The PWM frequency can be calculated using the formula F(pwm) = F(tim) / ((ARR + 1) x (PSC +1)), where F(tim) is the frequency of the timer, PSC is the clock prescaler. We can also calculate thenumber of possible duty cycle values and tell the precision. Resolution(steps) = F(tim) / F(pwm) and Resolution(bits) = log2(F(tim)/F(pwm)).</p>
+
+<h3>Example. Servo control on STM32G431KB.</h3>
+
+<ol>
+  <li>
+    <p>First consult the datasheet to find a timer layout supporting PWM. <a href="https://www.st.com/resource/en/datasheet/stm32g431kb.pdf">STM32G431KB</a> On page 16 we see the block diagram that shows APB2 connects to TIMER1 that supports a 16bit (65535 max size) resolution PWM. If we open the chip wizard we can navigate to Timers on the left side and activate TIM1. For TIM1, select Clock Source as Internal Clock and Channel1 as PWM Generation CH1 (changing the channel should change the output pin). Also, you need to set the High Speed Clock to Crystal/Ceramic Resonator under System Core -> RCC. Then, if the servo needs 50Hz PWM one must achieve 50 cycles for the current clock speed. So, I have scaled the second peripheral clock down from 170MHz to 42.5MHz using the clock configurator Wizard. Now, we have 42500000 Hz / 50 Hz = 850000 Hz, so we need to scale this down by 20 to be under the maximum 65535. Then, 850000/20 = 42500 (note that the closer we are to 65535 the more precision we have, although servos have limits to their precision) and this is the value of the Auto Reload Register (ARR). Also, the value of the Prescaler (PSC) will be 20.</p>
+  </li>
+  <li>
+    <p>Now we can put our duty cycle variable in the USER CODE BEGIN Init in the main function. In the super loop we can set the duty cycle so, for 1ms (1/20 * (42500+1)) - 1 = 2124.05 (I prefer to round up) = 2125, 1.5 ms (1.5/20 * (42500 + 1)) - 1 = 3186.575 = 3187, 2 ms (1/10 * (42500+1)) - 1 = 4249.1 = 4250.</p>
+  </li>
+  <li>
+    <p>Now ensure to start the PWM output before the super loop by invoking HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1) where htim1 is our TIM_HandleTypeDef.</p>
+  </li>
+  <li>
+    <p>We can now put the servo to any angle we wish and this can be done by manipulating the value of the CCR1/Duty Cycle.</p>
+  </li>
+</ol>
+
+<h5>Now, you should have a working servo if not make sure to consult the servo and STM32 chip datasheet for timing information.</h5>
