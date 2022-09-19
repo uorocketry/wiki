@@ -2,7 +2,7 @@
 title: Hardware Requirements
 description: 
 published: true
-date: 2022-09-14T02:41:36.135Z
+date: 2022-09-19T05:05:17.845Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-14T02:13:51.619Z
@@ -20,13 +20,9 @@ All chips must:
 - Use the STM32G431KBT6 MCU.
 - Communicate to other chips using FDCAN.
 
-## State Machine Board
-No special requirements
-
-## Data Logging Board
+## State Machine / Data Logging / Communication Board
 - Interface with SD Card (probably SPI? TODO find specific card)
-
-## Communication Board
+- External crystal
 - TODO: Need to research on Ethernet or RS-485?
 
 ## Temperature Board
