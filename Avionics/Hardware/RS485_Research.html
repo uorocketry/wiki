@@ -1,0 +1,69 @@
+<!--
+title: RS-485 Research
+description: A brief exploration of the benefits an drawbacks of potentially using RS-485 for long distance wired communication for our system
+published: true
+date: 2022-09-22T01:32:58.614Z
+tags: 
+editor: ckeditor
+dateCreated: 2022-09-22T01:32:58.614Z
+-->
+
+<p><span class="text-huge"><sup>Basic Overview:</sup></span></p>
+<p>RS-485 is an industry standard for wired serial communication. It utilises a differential pair to send signals over long distances. Can reach max distance of 1200m at speed of 90 kbps and up to 10 Mbps for shorter distances. No standard connector has been established for RS-485, but it is often used with screw terminals. Up to 32 transceivers on one network*.</p>
+<p>*Some transceiver chips allow for higher number of transceivers to connect to the bus.</p>
+<p><span class="text-big">Specifications:</span></p>
+<p>RS 485 uses a differential pair, which means at the least it requires 2 wires (A &amp; B). At the two farthest terminals, a termination resistor connects these wires which should match the line impedance (for twisted pair ≈ 120Ω). Logic wise, the logic of the standard is as follows:</p>
+<figure class="table">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.8pt;">A</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">B</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">Logic</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.8pt;">LOW</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">HIGH</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">1</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.8pt;">HIGH</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">LOW</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">0</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Drivers have a third state called high impedance state which works as a disable.</p>
+<p>The RS-485 standard can be utilized for full and half duplex communication, the former requiring two sets (4) wires. This can create the necessity for additional naming conventions for the wires.</p>
+<figure class="table">
+  <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.8pt;">Line</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">A</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt none windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">B</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:1.0pt solid windowtext;border-right:1.0pt solid windowtext;border-top:1.0pt none windowtext;padding:0cm 5.4pt;vertical-align:top;width:155.8pt;">Alternative Name</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">RX-, TX-, D-</td>
+        <td style="border-bottom:1.0pt solid windowtext;border-left:none;border-right:1.0pt solid windowtext;border-top:none;padding:0cm 5.4pt;vertical-align:top;width:155.85pt;">RX+, TX+, D+</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>For full duplex, the TX line is used for sending and RX is used for receiving. In this configuration, only the computer/master controls the TX line the RX is controlled by the slave devices.&nbsp;</p>
+<p>In addition to the AB lines, a common ground line may be used between devices. This helps ensure the voltages are within a range that is usable by the devices.</p>
+<p>The A/B lines are generally pulled down/pulled up in a range of +/- 7V to create a bias so that when the system is inactive, the noise on the lines is not read as data.&nbsp;</p>
+<p>A standard conformant driver supplies a 1.5 V minimum difference between the differential pair and receivers can detect a minimum of ≈&nbsp;0.2 V. Generally, signal voltage is from 0-5V.&nbsp;</p>
+<p>Networks should be arranged in a chain network where each component is connected in a line which does not loop back.&nbsp;</p>
+<p><span class="text-big">Benefits and Drawbacks:</span></p>
+<p>When considering RS-485, the main other option up for consideration is ethernet. The benefits of each over eachother are as follows.</p>
+<p>Ethernet in comparison is much faster, reaching speeds of 1 Gbps. RS-485 is restricted to &nbsp;a few 10s of Mbps or lower at long distances.</p>
+<p>Ethernet has the possibility for PoE. An equivalent is not available for RS-485 system.</p>
+<p>RS-485 can reliably go much farther than ethernet. Ethernet with a max of around 100m, RS-485 with a max of over 1 km.</p>
+<p><span class="text-big">References:</span></p>
+<p><a href="https://www.ti.com/lit/an/slla070d/slla070d.pdf?ts=1663678643441&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">https://www.ti.com/lit/an/slla070d/slla070d.pdf?ts=1663678643441&amp;ref_url=https%253A%252F%252Fwww.google.com%252F</a></p>
+<p><span class="text-big">Potential Options for Transceivers:</span></p>
+<p><a href="https://www.mouser.ca/ProductDetail/Analog-Devices/ADM3063EARZ?qs=sGAEpiMZZMumM9SKmFWhKqICdepNE7Kt4L7Kcu4WCMUGcicP7cLGvQ%3D%3D">https://www.mouser.ca/ProductDetail/Analog-Devices/ADM3063EARZ?qs=sGAEpiMZZMumM9SKmFWhKqICdepNE7Kt4L7Kcu4WCMUGcicP7cLGvQ%3D%3D</a></p>
+<p><a href="https://www.mouser.ca/ProductDetail/Maxim-Integrated/MAX13433EESD%2b?qs=sGAEpiMZZMumM9SKmFWhKpp%252BuoKkCP8V3SvP0C6WaBI%3D">https://www.mouser.ca/ProductDetail/Maxim-Integrated/MAX13433EESD%2b?qs=sGAEpiMZZMumM9SKmFWhKpp%252BuoKkCP8V3SvP0C6WaBI%3D</a></p>
