@@ -2,7 +2,7 @@
 title: Organizational Chart
 description: 
 published: true
-date: 2022-09-26T22:51:25.774Z
+date: 2022-09-26T22:53:11.136Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:17:20.768Z
