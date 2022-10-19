@@ -2,7 +2,7 @@
 title: Communication
 description: 
 published: true
-date: 2022-10-19T00:59:36.097Z
+date: 2022-10-19T01:01:13.603Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-18T23:51:41.612Z
@@ -134,6 +134,6 @@ message CommandAck {
 }
 ```
 
-- `finalACk`: Should always be set to `true` for a `ShortCommand`. For a `LongCommand`, set to `false` to acknowledge command reception. Set to `true` for acknowledge command completion.
+- `finalACk`: Should always be set to `true` for a `ShortCommand`. For a `LongCommand`, set to `false` to acknowledge command reception. Set to `true` to acknowledge command completion.
 
 
