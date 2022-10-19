@@ -2,7 +2,7 @@
 title: uoDAS
 description: 
 published: true
-date: 2022-10-19T04:03:09.876Z
+date: 2022-10-19T04:38:42.530Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-15T16:31:23.915Z
@@ -21,19 +21,30 @@ dateCreated: 2022-10-15T16:31:23.915Z
 - perfomant since they allow parallel processing
 (video explanation)https://www.youtube.com/watch?v=WY-F3knih7c
 
-## components
+## Components
 1. **Controller**
 https://www.ni.com/en-ca/shop/hardware/products/compactrio-controller.html
-- runs NI linux RTOS
+- runs NI **linux** RTOS
 - Arm or intel processors up to 2GHz clock speed
+
+- **SSH** login capable, https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YHpxCAG&l=en-CA
+- has also web configuration and monitoring page
+
+- can be programmed using python, c/c++, .NET using **nidaqmx**
+1. https://www.ni.com/en-ca/support/documentation/supplemental/21/using-ni-daqmx-in-text-based-programming-environments.html#section-114540073
+1. https://www.ni.com/en-ca/innovations/white-papers/13/c-c---embedded-system-design-tools.html
+
+- API endppoint can be created using labView, https://learn-cf.ni.com/teach/riodevguide/code/rt_web-service-host.html
+
 - cost 6,820 to 15,710 CAD
+
 - RAM: 4 to 16 gb
-- comes with integrated slots(4 to 8). ie serial
+- comes with integrated slots(4 to 8). ie serial ports
 - compactRio board is connected to main computer using usb-c cable
 - can be connected to network using ethernet cable and managed remotely using Labview. https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000x2HMCAY&l=en-CA
 
 
-2. **chassis**
+2. **Chassis**
 - where you connect your modules to extend.
 
 3. **Modules**
@@ -51,8 +62,10 @@ It is a youtube series on a robotics channel but kinda does the same thing as us
 - https://www.ni.com/en-ca/support/model.ni-9201.html
 - https://www.apexwaves.com/modular-systems/national-instruments/c-series/NI-9201?matchtype=p&network=g&device=c&keyword=ni-9201&campaign=17954270372&adgroup=145453977291
 
-## compact DAQ vs Compact RIO
-Simply put, ca is smaller but requires a computer to operate while CRIO has  a Linux RTOS.
+## Compact DAQ vs Compact RIO
+Simply put, cDAQ is smaller but requires a computer to operate while CRIO has  a Linux RTOS.
+- https://www.wiresmithtech.com/articles/what-is-compactdaq/
+
 
 ## Setup
 comes with:
