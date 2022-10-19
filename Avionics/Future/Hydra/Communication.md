@@ -2,7 +2,7 @@
 title: Communication
 description: 
 published: false
-date: 2022-10-19T00:48:45.324Z
+date: 2022-10-19T00:58:31.270Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-18T23:51:41.612Z
@@ -76,18 +76,62 @@ Using a Protobuf enum allows IDs to easily be shared among any systems that inte
 
 ### PubSub
 
+> How specific should pubsub messages be? e.g.  pressure could have it's `PressureData` message, or just use a generic `ADCData` or `FloatData` message.
+
 ```protobuf
-message HydraMessage {
-  ID source = 1;
-  ID destination = 2;
-  oneof payload {
-    PubSub pubsub = 3;
-    Command command = 4;
-    CommandAck commandAck = 5;
+message PubSub {
+  oneof type {
+    PubSubStatus status = 1;
+    PubSubSensor sensor = 2;
   }
 }
 
+message PubSubStatus {
+  bool hasError = 1;
+  bool isInitialized = 2;
+  oneof message {
+    MainStatus main = 3;
+    TemperatureStatus temperature = 4;
+    ServoStatus servo = 5;
+  }
+}
+
+message PubSubSensor {
+  oneof message {
+    TemperatureData temperature = 1;
+    PresureData pressure = 2;
+  }
+}
 ```
 
+### Command
+
+```protobuf
+message Command {
+  uint32 id = 1;
+  oneof type {
+    ShortCommand shortcommand = 2;
+    LongCommand longCommand = 3;
+  }
+}
+
+message ShortCommand {
+  oneof comand { StateMachineCommand stateMachine = 1; }
+}
+
+message LongCommand {
+  oneof command {
+    ServoValveCommand servoValve = 1;
+    DCValveCommand dcValve = 2;
+  }
+}
+
+message CommandAck {
+  uint32 id = 1;
+  bool finalACk = 2;
+}
+```
+
+- `finalACk`: Should always be set to `true` for a `ShortCommand`. For a `LongCommand`, set to `false` to acknowledge command reception. Set to `true` for acknowledge command completion.
 
 
