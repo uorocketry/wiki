@@ -1,12 +1,14 @@
 ---
 title: Communication
 description: 
-published: false
-date: 2022-10-19T00:58:31.270Z
+published: true
+date: 2022-10-19T00:59:36.097Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-18T23:51:41.612Z
 ---
+
+> This is a work in progress
 
 # Overview
 Hydra nodes communicate over CAN FD. Any messages are broadcasted over to all nodes in the CAN network, requiring filtering to be done on each node. 
