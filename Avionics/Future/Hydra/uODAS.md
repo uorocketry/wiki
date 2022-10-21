@@ -2,7 +2,7 @@
 title: uoDAS
 description: 
 published: true
-date: 2022-10-19T04:38:42.530Z
+date: 2022-10-21T00:24:30.303Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-15T16:31:23.915Z
@@ -61,6 +61,11 @@ It is a youtube series on a robotics channel but kinda does the same thing as us
 ***Helpful links:*** 
 - https://www.ni.com/en-ca/support/model.ni-9201.html
 - https://www.apexwaves.com/modular-systems/national-instruments/c-series/NI-9201?matchtype=p&network=g&device=c&keyword=ni-9201&campaign=17954270372&adgroup=145453977291
+2. wireless modules
+since we need data acquisition in real time, we may use a custom made radio like previous rockets or switch to the cRio wireless module.
+ther are 2 options: using a cRio and adding a wireless module to the chasis. second option is purchasing a cRio with an integrated builtin wifi module.
+- https://www.ni.com/en-ca/support/documentation/supplemental/08/ni-wi-fi-daq-frequently-asked-questions.html
+- https://shop.sea-gmbh.com/en/SEA-9719-802.11p-Communication-Module-Configuration/60000090-CFG (price: $2,700)
 
 ## Compact DAQ vs Compact RIO
 Simply put, cDAQ is smaller but requires a computer to operate while CRIO has  a Linux RTOS.
