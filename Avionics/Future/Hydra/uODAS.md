@@ -2,7 +2,7 @@
 title: uoDAS
 description: 
 published: true
-date: 2022-10-21T00:24:30.303Z
+date: 2022-10-21T02:52:44.458Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-15T16:31:23.915Z
@@ -56,8 +56,8 @@ A good explanation and overview on how to use CRIO with analog sensors can be fo
 It is a youtube series on a robotics channel but kinda does the same thing as us: get analog data from sensors, convert it, activate actuators, ...
 `*Watch it*`
 1. **Analog input NI 9201 or similar**
-- This is a module to be attached to the chasis and takes in input from sensors
-- Need a breakout board since it serial port. The breakout booard allows the connection of 8 devices on the module
+- This module will be attached to the chasis and will take input from the sensors
+- Need a breakout board since it serial port(should come with the cRIO). The breakout booard allows the connection of 8 devices(analog inputs) on the module
 ***Helpful links:*** 
 - https://www.ni.com/en-ca/support/model.ni-9201.html
 - https://www.apexwaves.com/modular-systems/national-instruments/c-series/NI-9201?matchtype=p&network=g&device=c&keyword=ni-9201&campaign=17954270372&adgroup=145453977291
