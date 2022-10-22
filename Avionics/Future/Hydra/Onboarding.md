@@ -22,7 +22,12 @@ ASF4 Reference Manual: https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-40
 - Install Ninja and CMake. Apt is ninja-build and cmake.
 - Use the build script to build by specifying the device you'd like to build for e.g. ./build.sh main
 ## Windows
-TODO
+- Install MPLab IPE (This is for programming the devices. You can download the needed device pack online)
+- Install the XC32 compiler and add the bin to your PATH variable.
+- Install Ninja and add it to your PATH variable. (https://github.com/ninja-build/ninja/releases)
+- Install CMake and complete all required steps for installation. (https://cmake.org/download/)
+- Use the build script to build by specifying the device you'd like to build for e.g. ./build.ps1 main
+- Or use git bash to to run the building script ./build.sh main
 
 # Software Intro
 ## ASF4
