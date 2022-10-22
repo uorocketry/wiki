@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-10-22T04:24:35.551Z
+date: 2022-10-22T04:25:30.456Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -12,7 +12,8 @@ dateCreated: 2022-10-22T01:49:18.966Z
 
 C++ Tutorial: http://uorocketry.wikidot.com/wiki:cpp-resources
 CAN-BUS Primer: https://dewesoft.com/daq/what-is-can-bus
-Intro to Microcontrollers: https://www.embeddedrelated.com/showarticle/453.php
+Intro to Microcontrollers: https://www.embeddedrelated.com/showarticle/453.php\
+ASF4 Reference Manual: https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-4021-AF0C-D99E61B8160D-en-US-4/index.html?GUID-1051C71D-4C07-406C-ACCE-BFE886294818
 
 # Software Dev Setup
 ## Linux
@@ -25,8 +26,7 @@ TODO
 
 # Software Intro
 ## ASF4
-We use a advanced software framework to handle lower level code. 
-The reference manual is found here https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-4021-AF0C-D99E61B8160D-en-US-4/index.html?GUID-1051C71D-4C07-406C-ACCE-BFE886294818 
+We use a advanced software framework to handle lower level code.  
 ### Diagram of the advanced software framework
 ![asf4.png](/asf4.png)
 
