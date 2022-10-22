@@ -2,7 +2,7 @@
 title: Hydra
 description: HYper Dynamic Rocketry Avionics
 published: true
-date: 2022-10-01T03:04:54.544Z
+date: 2022-10-22T01:31:05.049Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-19T23:18:55.267Z
@@ -29,7 +29,9 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 ```
 
 
+# MCU
 
+The ATSAME51J18A MCU is going to be used for all nodes.
 
 
 
