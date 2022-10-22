@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-10-22T04:16:43.181Z
+date: 2022-10-22T04:24:35.551Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -23,7 +23,17 @@ Intro to Microcontrollers: https://www.embeddedrelated.com/showarticle/453.php
 ## Windows
 TODO
 
-# CAN Analogy
+# Software Intro
+## ASF4
+We use a advanced software framework to handle lower level code. 
+The reference manual is found here https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-4021-AF0C-D99E61B8160D-en-US-4/index.html?GUID-1051C71D-4C07-406C-ACCE-BFE886294818 
+### Diagram of the advanced software framework
+![asf4.png](/asf4.png)
+
+## CAN
+We use CAN technology to communicate between nodes. 
+The ASF4 covers the implementation of CAN. 
+### CAN Analogy
 You are a CAN node and enter Starbucks wanting to order an iced coffee. 
 So, you wait in line to order; this is the transmit queue and works 
 on the principle of FIFO (first in first out). You're at the cash and ready to order.
