@@ -2,7 +2,7 @@
 title: Sensor Pinouts
 description: cable and connector pin assignments for pressure transducers, load cells, etc.
 published: true
-date: 2022-10-25T19:13:48.365Z
+date: 2022-10-25T19:20:15.797Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-25T19:13:48.365Z
@@ -10,7 +10,8 @@ dateCreated: 2022-10-25T19:13:48.365Z
 
 
 
-Button Load Cell (1000kg Loadstar Sensors)
+**Button Load Cell Loadstar Sensors**
+1000kg
 
 | Connector Pin | Wire Color | Assignmnet   |
 |---------------|------------|--------------|
@@ -21,12 +22,13 @@ Button Load Cell (1000kg Loadstar Sensors)
 | 5             | SHIELD     | Shield       |
 
 
-Pressure Transducer (MEAS 0.5-5.0V 0-2500psi)
+**Pressure Transducer MEAS M3031-000005-2K5PG**
+0.5-4.5V, 0-2500psi
 
 | Connector Pin | Wire Color | Assignmnet   |
 |---------------|------------|--------------|
-| 1             | RED        | Excitation + |
+| 1             | RED        | +5V          |
 | -             | GREEN      | N/C          |
-| 2             | BLACK      | Excitation - |
-| 3             | WHITE      | Signal -     |
+| 2             | BLACK      | GND          |
+| 3             | WHITE      | Signal Out   |
 | 4             | SHIELD     | Shield       |
