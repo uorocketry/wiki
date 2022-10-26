@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-10-22T04:25:30.456Z
+date: 2022-10-26T14:04:40.585Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -16,10 +16,13 @@ Intro to Microcontrollers: https://www.embeddedrelated.com/showarticle/453.php\
 ASF4 Reference Manual: https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-4021-AF0C-D99E61B8160D-en-US-4/index.html?GUID-1051C71D-4C07-406C-ACCE-BFE886294818
 
 # Software Dev Setup
+Repo: https://github.com/uorocketry/hydra
+
 ## Linux
 - Install MPLab IPE (This is for programming the devices. You can download the needed device pack online)
 - Install the XC32 compiler and add the bin to your PATH variable.
 - Install Ninja and CMake. Apt is ninja-build and cmake.
+- Install VSCode or CLion for the IDE
 - Use the build script to build by specifying the device you'd like to build for e.g. ./build.sh main
 ## Windows
 TODO
