@@ -2,7 +2,7 @@
 title: Sensor Pinouts
 description: cable and connector pin assignments for pressure transducers, load cells, etc.
 published: true
-date: 2022-10-25T19:21:38.343Z
+date: 2022-10-26T01:23:00.562Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-25T19:13:48.365Z
