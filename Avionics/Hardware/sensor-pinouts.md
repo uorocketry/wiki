@@ -2,7 +2,7 @@
 title: Sensor Pinouts
 description: cable and connector pin assignments for pressure transducers, load cells, etc.
 published: true
-date: 2022-10-27T18:26:00.968Z
+date: 2022-10-27T18:26:48.729Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-25T19:13:48.365Z
@@ -38,9 +38,5 @@ dateCreated: 2022-10-25T19:13:48.365Z
 
 | Connector Pin | Wire Color | Assignmnet   |
 |---------------|------------|--------------|
-| 1             | RED        | +5V          |
-| -             | GREEN      | N/C          |
-| 2             | BLACK      | GND          |
-| 3             | WHITE      | Signal Out   |
-| 4             | SHIELD     | Shield       |
-
+| 1             | BLACK      | GND          |
+| 2             | RED        | +12V         |
