@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-10-26T14:05:40.836Z
+date: 2022-10-29T16:52:58.426Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -18,11 +18,11 @@ ASF4 Reference Manual: https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-40
 # Software Dev Setup
 Repo: https://github.com/uorocketry/hydra
 
-## Linux
+## Linux and Mac
 - Clone the repo
 - Install MPLab IPE (This is for programming the devices. You can download the needed device pack online)
 - Install the XC32 compiler and add the bin to your PATH variable.
-- Install Ninja and CMake. Apt is ninja-build and cmake.
+- Install Ninja and CMake. Apt is ninja-build and cmake. Brew ninja and cmake.
 - Install VSCode or CLion for the IDE
 - Use the build script to build by specifying the device you'd like to build for e.g. ./build.sh main
 ## Windows
