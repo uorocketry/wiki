@@ -1,8 +1,8 @@
 ---
-title: Data Acquisition
+title: Data Acquisition (uoDAS)
 description: 
 published: true
-date: 2022-11-02T13:21:15.087Z
+date: 2022-11-03T01:08:45.919Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-02T13:21:15.087Z
