@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-10-29T16:52:58.426Z
+date: 2022-11-04T00:46:03.102Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -26,7 +26,13 @@ Repo: https://github.com/uorocketry/hydra
 - Install VSCode or CLion for the IDE
 - Use the build script to build by specifying the device you'd like to build for e.g. ./build.sh main
 ## Windows
-TODO
+- Install MPLab IPE (This is for programming the devices. You can download the needed device pack online)
+- Install the XC32 compiler and add the bin to your PATH variable.
+- Install Ninja and add it to your PATH variable. (https://github.com/ninja-build/ninja/releases)
+- Install CMake and complete all required steps for installation. (https://cmake.org/download/)
+- Use the build script to build by specifying the device you'd like to build for e.g. ./build.ps1 main
+- Or use git bash to to run the building script ./build.sh main
+- For now, switch to the CmakeWindowsbuild branch to be able to build on windows (it should be part of main soon). 
 
 # Software Intro
 ## ASF4
