@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-11-04T00:46:03.102Z
+date: 2022-11-06T20:28:56.303Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -14,6 +14,7 @@ C++ Tutorial: http://uorocketry.wikidot.com/wiki:cpp-resources
 CAN-BUS Primer: https://dewesoft.com/daq/what-is-can-bus
 Intro to Microcontrollers: https://www.embeddedrelated.com/showarticle/453.php\
 ASF4 Reference Manual: https://onlinedocs.microchip.com/pr/GUID-2A8AADED-413E-4021-AF0C-D99E61B8160D-en-US-4/index.html?GUID-1051C71D-4C07-406C-ACCE-BFE886294818
+SAM E51 Datasheet: https://ww1.microchip.com/downloads/aemDocuments/documents/MCU32/ProductDocuments/DataSheets/SAM-D5x-E5x-Family-Data-Sheet-DS60001507.pdf
 
 # Software Dev Setup
 Repo: https://github.com/uorocketry/hydra
