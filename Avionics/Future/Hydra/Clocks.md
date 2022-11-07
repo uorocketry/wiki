@@ -2,7 +2,7 @@
 title: Clocks and Crystals
 description: 
 published: true
-date: 2022-11-07T21:36:39.388Z
+date: 2022-11-07T21:46:26.168Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-07T21:36:39.388Z
@@ -19,7 +19,8 @@ These crystals won't help your chakra haha.
 ## DFLL 
 Always going to be 48MHz for the ATSAME51J20A
 ## DPLL 
-Reference range of 32KHz to 3.2MHz.
+Reference range of 32KHz to 3.2MHz. 
+Output range 96 MHz to 200 MHz.
 ### Calculation 
 LDRFRAC -> Loop divider ratio fractional part
 LDR -> Loop divider ratio integer part
