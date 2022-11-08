@@ -1,8 +1,8 @@
 ---
-title: Hydra
+title: HYDRA
 description: HYper Dynamic Rocketry Avionics
 published: true
-date: 2022-11-03T00:54:25.100Z
+date: 2022-11-08T18:50:52.432Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-19T23:18:55.267Z
