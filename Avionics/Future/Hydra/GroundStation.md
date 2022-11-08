@@ -2,7 +2,7 @@
 title: Ground Station
 description: 
 published: true
-date: 2022-11-08T18:29:11.445Z
+date: 2022-11-08T18:31:48.078Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-08T18:08:37.514Z
@@ -36,7 +36,7 @@ The proxy should be as simple as possible, and simply pass along the data while 
 The proxy can use one of several data sources to provide information. The data source that is being used is hidden from the listeners.
 
 Communication between the proxy and the ground station components is done using Socket.IO (https://socket.io/). Various event names will be used depending on the type of information. For example, `rocket` for rocket communication, `fill-cart` for fill-cart communication, `radio` for radio information, etc.
-
+> Jonathan: Maybe we could allow the various listeners to talk to each other? For example, this could allow `RGS` to display the data logger status.
 
 Here is another view of how it works, with the serial data source as an example:
 
