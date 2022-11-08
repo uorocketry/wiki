@@ -2,7 +2,7 @@
 title: Ground Station
 description: 
 published: true
-date: 2022-11-08T18:28:48.078Z
+date: 2022-11-08T18:29:11.445Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-08T18:08:37.514Z
@@ -56,4 +56,3 @@ sequenceDiagram
   p ->> rgs: fillCart: ServoStatus
   p ->> dl: fillCart: ServoStatus
 ```
-asd
