@@ -2,7 +2,7 @@
 title: Clocks and Crystals
 description: 
 published: true
-date: 2022-11-07T21:46:26.168Z
+date: 2022-11-09T03:19:09.192Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-07T21:36:39.388Z
@@ -26,3 +26,6 @@ LDRFRAC -> Loop divider ratio fractional part
 LDR -> Loop divider ratio integer part
 Fckr -> reference clock 
 Fclk_dpll=Fckr*(LDR+1+LDRFRAC/32)
+## SD/MMC
+Default speed -> Maximum 25MHz
+High speed -> Maximum 50MHz
