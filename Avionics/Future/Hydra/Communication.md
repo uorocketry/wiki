@@ -2,7 +2,7 @@
 title: Communication
 description: 
 published: true
-date: 2022-10-19T01:01:13.603Z
+date: 2022-11-09T00:51:58.114Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-18T23:51:41.612Z
@@ -31,7 +31,7 @@ This ID can also be used to identify the payload type. For Hydra, this will not 
 # Serialization Format
 
 ## Intro
-CAN FD allows a payload of up to 64 bytes. To simplify the system, a serialization formation will be used. This will allow to easily convert from some data structure to the CAN payload and vice versa.
+CAN FD allows a payload of up to 64 bytes. To simplify the system, a serialization format will be used. This will allow to easily convert from some data structure to the CAN payload and vice versa.
 
 Due to the limitations of an embedded system, not many serialization format can be used. The best option seems to be Protocol Buffers with the `nanopb` library. This format can also easily be used across languages. Message formats can also easily be made backward and forward compatible.
 
