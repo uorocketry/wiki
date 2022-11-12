@@ -1,8 +1,8 @@
 ---
-title: Admin
+title: Org Chart
 description: 
 published: true
-date: 2022-11-12T08:43:58.385Z
+date: 2022-11-12T08:45:06.160Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-08T16:20:08.416Z
