@@ -2,7 +2,7 @@
 title: Onboarding
 description: 
 published: true
-date: 2022-11-08T18:56:38.046Z
+date: 2022-11-17T13:29:41.658Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-22T01:49:18.966Z
@@ -20,6 +20,8 @@ RTOS http://ww1.microchip.com/downloads/en/appnotes/atmel-42382-getting-started-
 
 # Software Dev Setup
 Repo: https://github.com/uorocketry/hydra
+
+MCU: ATSAME51J18A
 
 ## Linux and Mac
 - Clone the repo
