@@ -2,7 +2,7 @@
 title: Rocket to Ground Station Proxy
 description: 
 published: false
-date: 2022-11-21T01:50:30.043Z
+date: 2022-11-21T01:53:40.914Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-21T01:50:30.043Z
@@ -15,6 +15,11 @@ dateCreated: 2022-11-21T01:50:30.043Z
 
 - At the start of a mavlink message there is a byte that indicates the start of a new packet
 
+---
+
 This image details how is a mavlink message formatted 
 
-[mavlink-frame.png](/mavlink-frame.png) 
+![mavlink-frame.png](/mavlink-frame.png)
+
+---
+
