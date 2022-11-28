@@ -2,7 +2,7 @@
 title: Thermo couple
 description: 
 published: true
-date: 2022-11-28T01:15:18.661Z
+date: 2022-11-28T05:24:27.201Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-28T00:22:02.800Z
@@ -48,4 +48,41 @@ First, import the lookup table as an array into your program. Use the following 
 
 - [Download c++ lookup table(curly bracket)](https://uottawa.sharepoint.com/teams/uORocketry/_layouts/15/guestaccess.aspx?guestaccesstoken=PRyVBsH%2B%2FrF7grl9ZETexMRx9crHjMSTFri%2BdDSZnAY%3D&docid=2_05c6badd70e3d4c18b203d67386bc66fb&rev=1&e=2ozte3)
 -	[download array with square brackets[ ]](https://uottawa.sharepoint.com/teams/uORocketry/_layouts/15/guestaccess.aspx?guestaccesstoken=ZXS1CMLSMC0we8bEqpjsxDBtVD51LhGQSyg3THvYh7w%3D&docid=2_0878db1b73934485880be4576431d311a&rev=1&e=bfH4Kh)
+```c++
+/**
+ * @param {array} arr - lookup table
+ * @param {float} value - voltage in millivolts
+ * @param {int} lower - lower limit in lookuptable
+ */
+float binarySearch(float arr[][2], float value, int lower, int upper)
+{
+    if (lower > upper)
+    {
+        return -1;
+    }
+    else
+    {
+        int mid = (lower + upper) / 2;
+        if (value == arr[mid][0])
+        {
+            return arr[mid][1];
+        }
+        // if value is really close to mid. when value is between mid and value next to it => Interpolate. https://www.wallstreetmojo.com/interpolation/
+        else if (value > arr[mid][0] && value < arr[mid + 1][0])
+        {
+            return (arr[mid][1] + ((arr[mid + 1][1] - arr[mid][1]) / (arr[mid + 1][0] - arr[mid][0])) * (value - arr[mid][0]));
+        }
+        // right side
+        else if (value > arr[mid][0])
+        {
+            return binarySearch(arr, value, mid + 1, upper);
+        }
+        // left side
+        else
+        {
+            return binarySearch(arr, value, lower, mid - 1);
+        }
+    }
+}
+```
 
