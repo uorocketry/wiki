@@ -2,19 +2,19 @@
 title: Thermo couple
 description: 
 published: true
-date: 2022-11-28T00:56:18.037Z
+date: 2022-11-28T01:01:42.574Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-28T00:22:02.800Z
 ---
 
-# Thermo couple ADC conversion
+# Thermocouple ADC conversion
 ## 1. [Polynomial  Equation](http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/temperature-measurement/thermocouple/type-k-calibration-table)
 
 $\frac{\left(x-V_{0}\right)\cdot\left(P_{1}+\left(x-V_{0}\right)\cdot\left(P_{2}+\left(x-V_{0}\right)\left(P_{3}+p_{4}\left(x-V_{0}\right)\right)\right)\right)}{1+\left(\left(x-V_{0}\right)\cdot\left(Q_{1}+\left(x-V_{0}\right)\cdot\left(Q_{2}+Q_{3}\cdot\left(x-V_{0}\right)\right)\right)\right)}$
 
 ## Implementation
-The following imppmentation uses values for temperature ranges `-100 to 100°C`. The limitration to the polynomial method is that it is an estimattion of certain intervals of values of voltage. For temperatures outside this range, the function will have  a higher margin error.
+The following implementation uses values for temperature ranges `-100 to 100°C`. The limitation to the polynomial method is that it is an estimation of certain intervals of values of voltage. For temperatures outside this range, the function will have  a higher margin of error.
 ```c++
 float calcTemp(float v)
 {
