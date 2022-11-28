@@ -2,7 +2,7 @@
 title: Thermo couple
 description: 
 published: true
-date: 2022-11-28T01:01:42.574Z
+date: 2022-11-28T01:10:49.767Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-28T00:22:02.800Z
@@ -40,4 +40,8 @@ float calcTemp(float v)
 ```
 
 ## 2. [Look-up table](https://srdata.nist.gov/its90/download/type_k.tab)
+First, import the lookup table as an array into your program. Use the following data:
+
+- [Download c++ lookup table(curly bracket)](https://uottawa.sharepoint.com/teams/uORocketry/_layouts/15/guestaccess.aspx?guestaccesstoken=PRyVBsH%2B%2FrF7grl9ZETexMRx9crHjMSTFri%2BdDSZnAY%3D&docid=2_05c6badd70e3d4c18b203d67386bc66fb&rev=1&e=2ozte3)
+-	[download array with square brackets[ ]](https://uottawa.sharepoint.com/teams/uORocketry/_layouts/15/guestaccess.aspx?guestaccesstoken=ZXS1CMLSMC0we8bEqpjsxDBtVD51LhGQSyg3THvYh7w%3D&docid=2_0878db1b73934485880be4576431d311a&rev=1&e=bfH4Kh)
 
