@@ -2,7 +2,7 @@
 title: Thermo couple
 description: 
 published: true
-date: 2022-11-28T05:45:55.162Z
+date: 2022-11-30T05:32:57.608Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-28T00:22:02.800Z
@@ -89,6 +89,34 @@ float binarySearch(float arr[][2], float value, int lower, int upper)
         else
         {
             return binarySearch(arr, value, lower, mid - 1);
+        }
+    }
+}
+```
+## Rust Implementation
+```rust
+fn binary_search(arr: &[[f64; 2]; 1808], value: f64, lower: usize, upper: usize) -> f64 {
+    if lower > upper {
+        -1.0
+    } else {
+        let mid: usize = (lower + upper) / 2;
+
+        if value == arr[mid][0] {
+            arr[mid][1]
+        }
+        // if value is really close to mid. when value is between mid and value next to it => Interpolate. https://www.wallstreetmojo.com/interpolation/
+        else if value > arr[mid][0] && value < arr[mid + 1][0] {
+            arr[mid][1]
+                + ((arr[mid + 1][1] - arr[mid][1]) / (arr[mid + 1][0] - arr[mid][0]))
+                    * (value - arr[mid][0])
+        }
+        // right side
+        else if value > arr[mid][0] {
+            binary_search(arr, value, mid + 1, upper)
+        }
+        // left side
+        else {
+            binary_search(arr, value, lower, mid - 1)
         }
     }
 }
