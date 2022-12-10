@@ -2,7 +2,7 @@
 title: Design Review Checklist
 description: 
 published: true
-date: 2022-12-10T01:43:37.386Z
+date: 2022-12-10T01:52:03.670Z
 tags: 
 editor: markdown
 dateCreated: 2022-12-10T00:48:44.615Z
@@ -10,9 +10,21 @@ dateCreated: 2022-12-10T00:48:44.615Z
 
 # Design Review Process and Checklist
 
+> This is still a work in progress page - Please add stuff to it!
+{.is-warning}
+
+> **The goal of this is wiki page are:**
+> - We don't keep making the same mistakes. We continuously learn
+> - We properly think about what order we are doing things, and deadlines
+> - Members can have a brought overview of where we are in the process
+> - Future leads of avionics will have all those things already documented, and will be able to follow the checklist and what to do since it will already be documented
+> - New recruits can have more documentation and be onboarded more quickly!
+> 
+{.is-info}
+
 This is very important to update and keep track of. Each year, we have design reviews with the competition (and other people like Professor Knox). Although the people in the team reguarly change (graduate, ...), those external stakeholders don't! 
 
-Knowledge of those processes was lost in the past, we forgot things during design review, they call us out on the items we forget, and we looked very bad and like fools that didn't know what we do. So this is why **you must follow and update those processes**
+Knowledge of those processes was lost in the past, we forgot things during design review, they call us out on the items we forget, and we looked very bad and like fools that didn't know what we do. So this is why **you must follow and update those processes when required**
 
 **If you forget one item of those checklist, people will notice, and they will be mad at you because they already told us those things before...** So please follow the document and update it if you have anything else important!
 
