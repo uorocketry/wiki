@@ -2,7 +2,7 @@
 title: Design Review Checklist
 description: 
 published: true
-date: 2022-12-10T00:49:08.799Z
+date: 2022-12-10T01:43:37.386Z
 tags: 
 editor: markdown
 dateCreated: 2022-12-10T00:48:44.615Z
@@ -14,7 +14,7 @@ This is very important to update and keep track of. Each year, we have design re
 
 Knowledge of those processes was lost in the past, we forgot things during design review, they call us out on the items we forget, and we looked very bad and like fools that didn't know what we do. So this is why **you must follow and update those processes**
 
-**If you forget one item of those checklist, people will notice, and they will be mad at you because they already told us for 3 years to include those things, and you didn't read this document...**
+**If you forget one item of those checklist, people will notice, and they will be mad at you because they already told us those things before...** So please follow the document and update it if you have anything else important!
 
 
 ## Hardware Workflow Overiew
