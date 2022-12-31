@@ -1,8 +1,8 @@
 ---
-title: Software (HYDRA)
+title: Software
 description: 
 published: true
-date: 2022-12-31T17:44:02.150Z
+date: 2022-12-31T17:45:28.132Z
 tags: 
 editor: markdown
 dateCreated: 2022-12-31T17:39:15.826Z
