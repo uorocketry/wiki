@@ -2,7 +2,7 @@
 title: Ground Station
 description: Design notes of the ground station 2022/2023
 published: true
-date: 2023-01-26T01:00:52.853Z
+date: 2023-01-26T01:02:33.015Z
 tags: 
 editor: markdown
 dateCreated: 2023-01-26T01:00:52.853Z
@@ -10,7 +10,7 @@ dateCreated: 2023-01-26T01:00:52.853Z
 
 # Ground Station
 Diagram: 
-[ground_station.drawio](/ground_station.drawio)
+![ground_station.drawio.png](/ground_station.drawio.png)
 
 ## RGS
 - Receive JSON from proxy 
