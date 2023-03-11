@@ -2,11 +2,14 @@
 title: Ground Station
 description: 
 published: true
-date: 2022-12-09T22:54:22.607Z
+date: 2023-03-11T17:36:18.735Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-08T18:08:37.514Z
 ---
+
+> This is page is used for discussion of future ground station designs, click here for the official [GroundStation](https://avwiki.uorocketry.ca/en/Avionics/HYDRA/Software/Ground-Station) wiki page
+
 
 # Overview
 The ground station goals are:
