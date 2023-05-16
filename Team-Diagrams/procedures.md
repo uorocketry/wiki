@@ -2,7 +2,7 @@
 title: Org Chart
 description: 
 published: true
-date: 2023-05-16T00:36:33.925Z
+date: 2023-05-16T00:37:05.019Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-08T16:20:08.416Z
