@@ -2,7 +2,7 @@
 title: State Machine
 description: The design docs for the state machine
 published: true
-date: 2023-05-29T04:15:50.984Z
+date: 2023-05-29T04:18:40.553Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-29T04:15:50.984Z
@@ -49,10 +49,13 @@ Deploy main -> Standby
   
 ## Power Board
 ### States
+- Initalization 
 - Ground power
 - Onboard power 
 ### Transitions 
-
+Initalization -> Ground power, Onboard power
+Ground power -> Onboard power
+Onboard power -> Ground Power 
 ### Messages 
 - Status
 	- Power source
