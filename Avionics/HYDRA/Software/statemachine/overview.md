@@ -2,7 +2,7 @@
 title: Overview
 description: 
 published: true
-date: 2023-06-07T00:07:02.964Z
+date: 2023-06-07T00:14:16.357Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-07T00:07:02.964Z
@@ -32,3 +32,5 @@ Recovery Board:
 - Runs a state machine that transitions based on:
 	 - Sensor information
    - Ground station commands (e.g. arming)
+- Control drogue and parachute based on state machine
+- Send board and state machine status
