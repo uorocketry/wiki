@@ -2,7 +2,7 @@
 title: Overview
 description: 
 published: true
-date: 2023-06-07T00:14:16.357Z
+date: 2023-06-07T00:15:54.962Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-07T00:07:02.964Z
@@ -17,6 +17,7 @@ Power Board:
 Sensor Board:
 - Read from SBG and dumps to CAN bus, along with SD Card
 - Monitor CAN Bus and write all messages to SD Card
+- Control Buzzer
 
 Communication Board:
 - Receive data from CAN Bus and send to radio
